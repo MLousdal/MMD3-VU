@@ -1,0 +1,15 @@
+@use "../../base/variables" as *;
+
+.home-tilmeld {
+  padding-block: $unit-6;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: $unit-2;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    max-width: 60ch;
+  }
+}

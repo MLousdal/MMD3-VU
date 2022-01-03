@@ -1,6 +1,6 @@
 <template>
   <a
-    class="btn btn-secondary grow"
+    class="btn secondary grow"
     :class="[{ s: size == 's' }, { l: size == 'l' }]"
     href="https://vu.membersite.dk/Membership/BuyMembership"
     target="_blank"

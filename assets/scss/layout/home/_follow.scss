@@ -1,0 +1,79 @@
+@use "../../base/variables" as *;
+
+.home-follow {
+  background-color: var(--foreground-color);
+  color: var(--color-primary);
+  padding-block: $unit-6;
+  text-align: center;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $unit-2;
+  }
+
+  .follow-grid {
+    display: grid;
+    gap: $unit-1;
+    grid-auto-rows: minmax(400px, auto);
+    grid-template-columns: repeat(2, 1fr);
+
+    a {
+      align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      gap: $unit-2;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &.facebook {
+        background-image: url("~assets/images/facebook.png");
+        grid-column: span 2;
+      }
+
+      &.debat {
+        background-image: url("~assets/images/debat.png");
+      }
+
+      &.instagram {
+        background-image: url("~assets/images/instagram.png");
+      }
+
+      &.twitter {
+        background-image: url("~assets/images/twitter.png");
+      }
+
+      &.nyheder {
+        background-image: url("~assets/images/nyheder.png");
+      }
+
+      &::before {
+        content: "";
+        background-color: var(--color-primary-transparent);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+
+    h3,
+    p {
+      color: var(--font-color);
+      position: relative;
+      width: 70%;
+      z-index: 2;
+    }
+  }
+}

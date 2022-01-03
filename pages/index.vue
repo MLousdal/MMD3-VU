@@ -1,20 +1,25 @@
 <template>
   <div>
-    <div class="hero">
-      <h1>TEST</h1>
-      <so-me-links size="l"></so-me-links>
-    </div>
-    <main class="wrapper column">
-      <h2>{{ kultur[0].title }}</h2>
-      <nuxt-picture :src="`/images/${kultur[0].img}`"></nuxt-picture>
-      <nuxt-content :document="kultur[0]"></nuxt-content>
-    </main>
+    <home-hero></home-hero>
+    <home-video></home-video>
+    <home-social></home-social>
+    <home-map></home-map>
+    <home-testimonials></home-testimonials>
+    <home-follow></home-follow>
+    <home-tilmeld></home-tilmeld>
   </div>
 </template>
 
 <script>
+import HomeFollow from '~/components/HomeFollow.vue'
+import HomeHero from '~/components/HomeHero.vue'
+import HomeMap from '~/components/HomeMap.vue'
+import HomeSocial from '~/components/HomeSocial.vue'
+import HomeTestimonials from '~/components/HomeTestimonials.vue'
+import HomeVideo from '~/components/HomeVideo.vue'
 export default {
   name: 'IndexPage',
+  components: { HomeHero, HomeVideo, HomeMap, HomeSocial, HomeTestimonials, HomeFollow },
   async asyncData({ $content, params }) {
     const kultur = await $content('').fetch()
 
