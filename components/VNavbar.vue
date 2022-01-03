@@ -10,13 +10,19 @@
       <div class="navLinksContainer">
         <ul class="navLinks">
           <li>
-            <nuxt-link to="/det-mener-vi/" class="underline">Det mener vi</nuxt-link>
+            <nuxt-link to="/det-mener-vi/" class="underline"
+              >Det mener vi</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="/lokalforeninger/" class="underline">Lokalforeninger</nuxt-link>
+            <nuxt-link to="/lokalforeninger/" class="underline"
+              >Lokalforeninger</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="/arrangementer" class="underline">Arrangementer</nuxt-link>
+            <nuxt-link to="/arrangementer" class="underline"
+              >Arrangementer</nuxt-link
+            >
           </li>
           <li>
             <nuxt-link to="/om-vu" class="underline">Om VU</nuxt-link>
@@ -44,6 +50,12 @@ import CtaBtn from './CtaBtn.vue'
 export default {
   name: 'VNavbar',
   components: { CtaBtn },
+  mounted() {
+    document.addEventListener('scroll', this.scrolledEffect)
+  },
+  destroyed() {
+    document.removeEventListener('scroll', this.scrolledEffect)
+  },
   methods: {
     toggleMenu() {
       const navLinksContainer = document.querySelector('.navLinksContainer')
@@ -55,6 +67,15 @@ export default {
         navLinksContainer.style.display = 'flex'
       } else {
         navLinksContainer.style.display = 'none'
+      }
+    },
+    scrolledEffect() {
+      if (window.scrollY > 0) {
+        if (!this.$el.classList.contains('scrolled')) {
+          this.$el.classList.add('scrolled', 'shadow', 's')
+        }
+      } else {
+        this.$el.classList.remove('scrolled', 'shadow', 's')
       }
     },
   },

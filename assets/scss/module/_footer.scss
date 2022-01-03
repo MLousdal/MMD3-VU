@@ -59,11 +59,17 @@ footer {
     padding: $unit-1;
     grid-template-columns: repeat(1, 1fr);
     gap: $unit-1;
+    text-align: center;
+
+    .some-links {
+      justify-content: center;
+    }
   }
 
   footer nav {
     display: flex;
     flex-direction: column;
     gap: $unit-05;
+    align-items: center;
   }
 }
