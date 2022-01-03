@@ -1,7 +1,7 @@
 <template>
-  <section class="home-testimonials">
+  <section class="home-testimonials overlay">
     <div class="wrapper">
-      <p>Hvad siger vores medlemmer?</p>
+      <p class="large-text">Hvad siger vores medlemmer?</p>
       <p class="xlarge-text">
         “Indsæt super motiverende salgstale fra Josephine om, hvorfor hun har
         valgt at være en del af Venstres Ungdom, og hvad hun har fået ud af det

@@ -6,8 +6,8 @@
       class="round o"
     />
     <div class="flex column gap-05">
-      <p class="small-text">Josephine Andersen</p>
-      <p class="small-text">Medlem af Venstres Ungdom</p>
+      <p class="">Josephine Andersen</p>
+      <p class="">Medlem af Venstres Ungdom</p>
     </div>
   </section>
 </template>

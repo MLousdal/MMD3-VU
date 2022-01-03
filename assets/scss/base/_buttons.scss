@@ -134,3 +134,22 @@ input[type="button"] {
     background-color: transparent;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .btn,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    font-size: 0.65rem;
+  
+    &.s {
+      font-size: 0.4rem;
+    }
+  
+    &.l {
+      font-size: 0.8rem;
+      padding: $unit-1 $unit-15;
+    }
+  }
+}

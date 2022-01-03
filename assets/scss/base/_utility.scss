@@ -41,10 +41,27 @@
     padding-top: $unit-7;
 }
 
+.overlay {
+    &::after {
+        content: "";
+        background-color: var(--color-primary-transparent);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 2;
+    }
+}
+
 // Base
 .wrapper {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 

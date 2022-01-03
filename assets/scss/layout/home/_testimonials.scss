@@ -10,16 +10,6 @@
   padding-block: $unit-6;
   color: var(--font-color);
 
-  &::after {
-    content: "";
-    background-color: var(--color-primary-transparent);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
   .wrapper {
     align-items: center;
     display: flex;

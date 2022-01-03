@@ -1,16 +1,30 @@
 @use "../../base/variables" as *;
 
 .home-hero {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: $unit-3;
   justify-content: center;
   min-height: 100vh;
-  text-align: center;
+  text-align: left;
+  background-image: url("~assets/images/hero.png");
+  background-position: center;
+  background-size: cover;
+
+  .wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: $unit-1;
+    justify-content: center;
+  }
 
   p {
-    max-width: 35ch;
+    max-width: 55ch;
+  }
+
+  .some-links {
+    position: absolute;
+    bottom: $unit-4;
+    right: 0;
   }
   @media screen and (max-width: 470px) {
     p {
