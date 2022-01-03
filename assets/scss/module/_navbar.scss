@@ -101,7 +101,7 @@ nav {
     display: none;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 970px) {
     .navBtn {
       cursor: pointer;
       display: block;
@@ -119,7 +119,7 @@ nav {
       padding: $unit-1 $unit-2 $unit-3 $unit-3;
       position: absolute;
       right: 0;
-      top: $unit-45;
+      top: $unit-4;
       width: fit-content;
     }
 
@@ -141,17 +141,21 @@ nav {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 970px) {
   nav.box {
     align-items: center;
     background-color: var(--font-color);
     padding: $unit-1;
   }
-  nav .logo img {
-    filter: var(--filter-primary);
-
-    &:hover {
+  nav .logo {
+    height: $unit-2;
+    width: $unit-2;
+    img {
       filter: var(--filter-primary);
+
+      &:hover {
+        filter: var(--filter-primary);
+      }
     }
   }
 }
