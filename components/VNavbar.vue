@@ -10,19 +10,19 @@
       <div class="navLinksContainer">
         <ul class="navLinks">
           <li>
-            <nuxt-link to="/" class="underline">Det mener vi</nuxt-link>
+            <nuxt-link to="/det-mener-vi/" class="underline">Det mener vi</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="underline">Lokalforeninger</nuxt-link>
+            <nuxt-link to="/lokalforeninger/" class="underline">Lokalforeninger</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="underline">Arrangementer</nuxt-link>
+            <nuxt-link to="/arrangementer" class="underline">Arrangementer</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="underline">Om VU</nuxt-link>
+            <nuxt-link to="/om-vu" class="underline">Om VU</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="underline">Kontakt os</nuxt-link>
+            <nuxt-link to="/kontakt" class="underline">Kontakt os</nuxt-link>
           </li>
           <cta-btn size="l"></cta-btn>
         </ul>

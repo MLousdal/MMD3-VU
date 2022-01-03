@@ -36,6 +36,10 @@ footer {
       display: flex;
       flex-direction: row;
       gap: $unit-2;
+
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

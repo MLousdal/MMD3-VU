@@ -5,7 +5,7 @@
         <h4>Find rundt på siden</h4>
         <ul>
           <li>
-            <nuxt-link to="/detmenervi">Det mener vi</nuxt-link>
+            <nuxt-link to="/det-mener-vi">Det mener vi</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/lokalforeninger">Find din Lokalforening</nuxt-link>
@@ -14,7 +14,7 @@
             <nuxt-link to="/arrangementer">Arrangementer</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/omvu">Om VU</nuxt-link>
+            <nuxt-link to="/om-vu">Om VU</nuxt-link>
           </li>
         </ul>
       </div>

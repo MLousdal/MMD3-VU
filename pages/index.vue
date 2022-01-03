@@ -6,7 +6,6 @@
     </div>
     <main class="wrapper column">
       <h2>{{ kultur[0].title }}</h2>
-      <!-- <img :src="`/images/${kultur[0].img}`" alt=""> -->
       <nuxt-picture :src="`/images/${kultur[0].img}`"></nuxt-picture>
       <nuxt-content :document="kultur[0]"></nuxt-content>
     </main>
