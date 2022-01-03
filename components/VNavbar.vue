@@ -5,7 +5,7 @@
         <div class="logo-bg">
           <img src="~/assets/icons/vu-logo.svg" alt="" />
         </div>
-        <span class="bold xlarge-text">Venstres Ungdom</span>
+        <span class="bold xlarge-text capitalize">Venstres Ungdom</span>
       </nuxt-link>
       <div class="navLinksContainer">
         <ul class="navLinks">
@@ -24,7 +24,7 @@
           <li>
             <nuxt-link to="/" class="underline">Kontakt os</nuxt-link>
           </li>
-          <cta-btn></cta-btn>
+          <cta-btn size="l"></cta-btn>
         </ul>
       </div>
     </div>
