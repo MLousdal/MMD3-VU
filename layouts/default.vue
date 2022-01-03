@@ -2,6 +2,7 @@
   <div class="gaps">
     <v-navbar></v-navbar>
     <nuxt></nuxt>
+    <v-footer></v-footer>
   </div>
 </template>
 

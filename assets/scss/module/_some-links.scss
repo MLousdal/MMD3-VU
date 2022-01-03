@@ -6,4 +6,12 @@
   box-sizing: content-box;
   border-radius: $border-radius-o;
   filter: none;
+
+  &.inverse {
+    background-color: var(--background-color);
+
+    img {
+      filter: var(--filter-font-color);
+    }
+  }
 }

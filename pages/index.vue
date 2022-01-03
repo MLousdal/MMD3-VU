@@ -2,6 +2,7 @@
   <div>
     <div class="hero">
       <h1>TEST</h1>
+      <so-me-links size="l"></so-me-links>
     </div>
     <main class="wrapper column">
       <h2>{{ kultur[0].title }}</h2>
@@ -15,7 +16,6 @@
 <script>
 export default {
   name: 'IndexPage',
-  components: [],
   async asyncData({ $content, params }) {
     const kultur = await $content('').fetch()
 

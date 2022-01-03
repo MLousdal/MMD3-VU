@@ -1,0 +1,65 @@
+@use "../base/variables" as *;
+
+footer {
+  background-color: var(--foreground-color);
+  color: var(--color-primary);
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: $unit-3;
+
+    p {
+      margin-bottom: $unit-1;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: $unit-05;
+
+      li {
+        margin-bottom: 0;
+        height: fit-content;
+      }
+    }
+  }
+
+  nav {
+    position: relative;
+    padding: $unit-2;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: $unit-2;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1060px) {
+  footer .footer-grid {
+    padding: $unit-2;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $unit-1;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  footer .footer-grid {
+    padding: $unit-1;
+    grid-template-columns: repeat(1, 1fr);
+    gap: $unit-1;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: $unit-05;
+  }
+}
