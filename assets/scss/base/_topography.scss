@@ -1,7 +1,6 @@
 @use "../base/variables" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Yanone+Kaffeesatz:wght@400;700&display=swap');
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -19,6 +18,7 @@ h5,
 h6 {
     margin: 0;
     font-weight: 700;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 h1 {
     font-size: clamp(1.5em, 7vw, 4.5rem);

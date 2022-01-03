@@ -2,7 +2,10 @@
   <nav class="box">
     <div class="navContainer">
       <nuxt-link to="/" class="logo" aria-label="home">
-        <img src="/favicon.ico" alt="" />
+        <div class="logo-bg">
+          <img src="~/assets/icons/vu-logo.svg" alt="" />
+        </div>
+        <span class="bold xlarge-text">Venstres Ungdom</span>
       </nuxt-link>
       <div class="navLinksContainer">
         <ul class="navLinks">
@@ -21,6 +24,7 @@
           <li>
             <nuxt-link to="/" class="underline">Kontakt os</nuxt-link>
           </li>
+          <cta-btn></cta-btn>
         </ul>
       </div>
     </div>
@@ -35,23 +39,26 @@
 </template>
 
 <script>
+import CtaBtn from './CtaBtn.vue'
+
 export default {
-  name: "VNavbar",
+  name: 'VNavbar',
+  components: { CtaBtn },
   methods: {
     toggleMenu() {
-      const navLinksContainer = document.querySelector(".navLinksContainer");
+      const navLinksContainer = document.querySelector('.navLinksContainer')
 
       if (
-        navLinksContainer.style.display === "none" ||
-        navLinksContainer.style.display === ""
+        navLinksContainer.style.display === 'none' ||
+        navLinksContainer.style.display === ''
       ) {
-        navLinksContainer.style.display = "flex";
+        navLinksContainer.style.display = 'flex'
       } else {
-        navLinksContainer.style.display = "none";
+        navLinksContainer.style.display = 'none'
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

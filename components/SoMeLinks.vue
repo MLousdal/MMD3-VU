@@ -1,8 +1,8 @@
 <template>
-  <div class="links flex row gap">
+  <div class="some-links flex row gap">
     <a
       href="https://www.facebook.com/VenstresUngdom/"
-      class="icon"
+      class="icon grow"
       :class="[{ m: size == 'm' }, { l: size == 'l' }]"
       target="_blank"
       rel="noopener"
@@ -10,7 +10,7 @@
     /></a>
     <a
       href="https://www.instagram.com/venstres_ungdom/?hl=en"
-      class="icon"
+      class="icon grow"
       :class="[{ m: size == 'm' }, { l: size == 'l' }]"
       target="_blank"
       rel="noopener"
@@ -18,7 +18,7 @@
     /></a>
     <a
       href="https://twitter.com/search?q=%23venstresungdom"
-      class="icon"
+      class="icon grow"
       :class="[{ m: size == 'm' }, { l: size == 'l' }]"
       target="_blank"
       rel="noopener"
@@ -26,7 +26,7 @@
     /></a>
     <a
       href="https://www.youtube.com/channel/UCjgTnWyUK6ZZs-c8FVaMW4A"
-      class="icon"
+      class="icon grow"
       :class="[{ m: size == 'm' }, { l: size == 'l' }]"
       target="_blank"
       rel="noopener"
@@ -37,14 +37,14 @@
 
 <script>
 export default {
-  name: "SoMeLinks",
+  name: 'SoMeLinks',
   props: {
     size: {
-      default: "m",
+      default: 'm',
       type: String,
     },
   },
-};
+}
 </script>
 
 <style></style>

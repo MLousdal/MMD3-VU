@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+
+.some-links .icon {
+  background-color: var(--foreground-color);
+  padding: $unit-1;
+  box-sizing: content-box;
+  border-radius: $border-radius-o;
+  filter: none;
+}

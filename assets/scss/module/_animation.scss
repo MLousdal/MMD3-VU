@@ -74,3 +74,12 @@
 .page-leave-to {
   opacity: 0;
 }
+
+.grow {
+  transition: all 0.45s;
+  
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
