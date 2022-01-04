@@ -1,18 +1,13 @@
 ---
-title: Overskrift
+title: Principprogrammer
+img: ''
 slug: index
-img: kultur.jpg
+programmer: [Kultur, Retspolitik]
 ---
 
 <!-- slug: er det url som siden har, skrevet i 'kebab-case' -->
 <!-- Tilføj artiklens billede til static/images, og indsæt fil navnet her -->
 
-Bacon ipsum dolor amet pork meatball aute, enim biltong labore alcatra. Quis doner short ribs, porchetta jerky tail capicola. Commodo ipsum consequat biltong strip steak dolor, ad sirloin nisi chicken laborum. Ullamco drumstick brisket, chislic proident nisi doner salami ground round pork chop. Biltong jerky t-bone ball tip commodo filet mignon lorem beef ribs occaecat aute in turkey velit. Ball tip beef ribs capicola strip steak exercitation meatball. Duis cupidatat velit ham, aliqua frankfurter adipisicing qui tri-tip filet mignon ham hock.
+Til tider kan det være svært at forstå, hvorfor nogle politikere gør, som de gør. Man må kende sit udgangspunkt for at vide, hvordan de grundlæggende principper påvirker den daglige politik. I VU kender vi vores udgangspunkt og går derfor aldrig på kompromis med vore holdninger. For Venstres Ungdom er udgangspunktet liberalismen. Med liberalismen som ballast har vi nogle klare mål for, hvordan det danske samfund skal udvikle sig – og det lader vi aldrig trænge i baggrunden.
 
-## Overskrift 2
-
-Bacon ipsum dolor amet pork meatball aute, enim biltong labore alcatra. Quis doner short ribs, porchetta jerky tail capicola. Commodo ipsum consequat biltong strip steak dolor, ad sirloin nisi chicken laborum. Ullamco drumstick brisket, chislic proident nisi doner salami ground round pork chop. Biltong jerky t-bone ball tip commodo filet mignon lorem beef ribs occaecat aute in turkey velit. Ball tip beef ribs capicola strip steak exercitation meatball. Duis cupidatat velit ham, aliqua frankfurter adipisicing qui tri-tip filet mignon ham hock.
-
-### Overskrift 3
-
-Bacon ipsum dolor amet pork meatball aute, enim biltong labore alcatra. Quis doner short ribs, porchetta jerky tail capicola. Commodo ipsum consequat biltong strip steak dolor, ad sirloin nisi chicken laborum. Ullamco drumstick brisket, chislic proident nisi doner salami ground round pork chop. Biltong jerky t-bone ball tip commodo filet mignon lorem beef ribs occaecat aute in turkey velit. Ball tip beef ribs capicola strip steak exercitation meatball. Duis cupidatat velit ham, aliqua frankfurter adipisicing qui tri-tip filet mignon ham hock.
+I dette principprogram kan du få svar på, hvad ideologien betyder på vidt forskellige områder som uddannelse, skat og miljøpolitik. Udover principprogrammet har VU en lang række uddybende oplæg på mange områder.

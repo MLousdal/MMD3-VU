@@ -1,8 +1,12 @@
 <template>
   <main class="wrapper column nav-offset">
     <h2>{{ article[0].title }}</h2>
-    <nuxt-picture :src="`/images/${article[0].img}`"></nuxt-picture>
     <nuxt-content :document="article[0]"></nuxt-content>
+    <ul>
+      <li v-for="program in article[0].programmer" :key="program">
+        <nuxt-link :to="`princip-programmer/${program.toLowerCase()}`">{{ program }}</nuxt-link>
+      </li>
+    </ul>
   </main>
 </template>
 
