@@ -1,0 +1,27 @@
+@use "../base/variables" as *;
+
+.subCard {
+  max-width: 300px;
+  border-radius: $border-radius-s;
+  color: var(--font-color-inverse);
+  flex: 1 1 0px;
+  overflow: hidden;
+  transition: ease-in 0.25s;
+  text-align: center;
+
+  img {
+    transition: ease-in 0.45s;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    // img {
+    //   transform: scale(1.1);
+    // }
+  }
+
+  .box {
+    position: relative;
+    z-index: 1;
+  }
+}

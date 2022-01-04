@@ -1,0 +1,8 @@
+@use "../base/variables" as *;
+
+.card-grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $unit-1;
+  width: 100%;
+}
