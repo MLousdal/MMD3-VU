@@ -5,7 +5,7 @@
       <nuxt-picture :src="`/images/${article.img}`"></nuxt-picture>
       <nuxt-content :document="article" class="offset-top"></nuxt-content>
     </main>
-    <sub-nav></sub-nav>
+    <SubNavDMV></SubNavDMV>
   </div>
 </template>
 

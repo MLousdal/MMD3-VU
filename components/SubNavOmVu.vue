@@ -5,8 +5,38 @@
       <p>{{ links }}</p>
       <ul>
         <li>
-          <nuxt-link to="/det-mener-vi/ordfører-områder/arbejdsmarked-erhverv"
-            >Arbejdsmarked og erhverv</nuxt-link
+          <nuxt-link to="/om-vu/omvu"
+            >Om VU</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/om-vu/historie"
+            >Historie</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/om-vu/karrieremuligheder"
+            >Karrieremuligheder</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/om-vu/medlemsblad"
+            >Medlemsblad</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/om-vu/struktur"
+            >Struktur</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/om-vu/udvalg"
+            >Udvalg</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/om-vu/videoer"
+            >Videoer</nuxt-link
           >
         </li>
       </ul>

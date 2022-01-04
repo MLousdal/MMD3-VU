@@ -4,7 +4,7 @@
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article"></nuxt-content>
     </main>
-    <sub-nav></sub-nav>
+    <SubNavDMV></SubNavDMV>
   </div>
 </template>
 

@@ -11,12 +11,14 @@
         </li>
       </ul>
     </main>
-    <sub-nav></sub-nav>
+    <SubNavDMV></SubNavDMV>
   </div>
 </template>
 
 <script>
+import SubNavDMV from '~/components/SubNavDMV.vue'
 export default {
+  components: { SubNavDMV },
   async asyncData({ $content, params }) {
     const article = await $content('det-mener-vi', params.slug).fetch()
 
