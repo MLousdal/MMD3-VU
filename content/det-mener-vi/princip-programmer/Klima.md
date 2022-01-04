@@ -2,7 +2,7 @@
 title: Klima
 desc: Læs mere om vores Klima principprogram
 slug: Klima
-img: 
+img: Klima.jpg
 ---
 
 Den globale opvarmning er en af vores tids største udfordringer. Derfor kræver det også omfattende løsninger, men vi skal også bevare fatningen. Vi skal ikke købe ind på en dagsorden, der er spækket med misinformation og skåltaler uden konkret indhold.

@@ -2,7 +2,7 @@
 title: Skat og finans
 desc: Læs mere om vores skat og finans principprogram
 slug: Skat-og-finans
-img: 
+img: Finans.jpg
 ---
 
 Venstres Ungdom betragter skat som et nødvendigt onde, der skal bruges på opgaver som retsvæsen, politi, forsvar, uddannelse og støtte til mennesker, der ikke kan klare sig selv. Venstres Ungdom tror på, at pengene har det bedst i borgernes egne lommer, men i dag synes der ikke at være en logisk sammenhæng eller grænser for, hvad der kan beskattes og pålægges afgifter. I dagens Danmark opkræves alt for høje skatter, og hele skattelovgivningen er unødigt kompliceret og uoverskuelig.

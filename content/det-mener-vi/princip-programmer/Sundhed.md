@@ -2,7 +2,7 @@
 title: Sundhed
 desc: Læs mere om vores sundhed principprogram
 slug: Sundhed
-img: 
+img: Sundhed.jpg
 ---
 
 I Venstres Ungdom mener vi, at individet skal være i fokus, og at patienten kommer i første række. Derfor skal det danske sundhedssystem i langt højere grad udliciteres, og pengene skal følge patienten. Dermed skal det frie sygehusvalg være muligt fra dag 1, for at sikre en hurtigt og effektiv behandling samt for at nedbringe ventelisterne. Der er intet selvstændigt argument for, at en behandling bør foregå i det offentlige, og det følger af vores ønske om at sætte patienten i centrum, at intet hensyn går forud for behandlingens kvalitet, pris og tilgængelighed.
