@@ -1,5 +1,5 @@
 <template>
-  <nav class="box">
+  <nav class="box top">
     <div class="navContainer">
       <nuxt-link to="/" class="logo" aria-label="home">
         <div class="logo-bg">

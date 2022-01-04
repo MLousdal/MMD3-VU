@@ -1,8 +1,11 @@
 <template>
-  <main class="wrapper column nav-offset">
-    <h1>{{ article.title }}</h1>
-    <nuxt-content :document="article"></nuxt-content>
-  </main>
+  <div class="article nav-offset wrapper">
+    <main class="">
+      <h1>{{ article.title }}</h1>
+      <nuxt-content :document="article"></nuxt-content>
+    </main>
+    <sub-nav></sub-nav>
+  </div>
 </template>
 
 <script>

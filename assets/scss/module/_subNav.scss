@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+
+.subNav nav{
+  background-color: var(--foreground-color);
+  border-radius: $border-radius-s;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  gap: $unit-05;
+  justify-content: flex-start;
+  min-width: fit-content;
+  white-space: nowrap;
+  padding: $unit-15;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: $unit-05;
+      height: fit-content;
+    }
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      // text-decoration: none;
+    }
+  }
+}
