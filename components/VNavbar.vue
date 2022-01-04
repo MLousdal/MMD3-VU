@@ -25,7 +25,7 @@
             >
           </li>
           <li>
-            <nuxt-link to="/om-vu" class="underline">Om VU</nuxt-link>
+            <nuxt-link to="/om-vu/omvu" class="underline">Om VU</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/kontakt" class="underline">Kontakt os</nuxt-link>
