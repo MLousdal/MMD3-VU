@@ -4,12 +4,14 @@
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article"></nuxt-content>
     </main>
-    <sub-nav></sub-nav>
+    <sub-nav-om-vu></sub-nav-om-vu>
   </div>
 </template>
 
 <script>
+import SubNavOmVu from '~/components/SubNavOmVu.vue'
 export default {
+  components: { SubNavOmVu },
   async asyncData({ $content, params }) {
     const article = await $content('om-vu', params.slug).fetch()
 

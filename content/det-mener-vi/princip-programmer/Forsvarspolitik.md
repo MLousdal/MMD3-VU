@@ -1,7 +1,7 @@
 ---
-title: Udenrigspolitik
-desc: Læs mere om vores udenrigspolitik principprogram
-slug: Udenrigspolitik
+title: Forsvars politik
+desc: Læs mere om vores forsvarspolitik principprogram
+slug: forsvarspolitik
 img: 
 ---
 

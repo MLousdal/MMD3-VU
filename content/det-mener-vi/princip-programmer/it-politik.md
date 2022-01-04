@@ -1,7 +1,7 @@
 ---
-title: It-miljø
+title: IT-politik
 desc: Læs mere om vores it-miljø principprogram
-slug: It-miljø
+slug: it-politik
 img: 
 ---
 

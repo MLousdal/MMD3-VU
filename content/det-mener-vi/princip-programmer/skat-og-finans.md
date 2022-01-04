@@ -20,7 +20,7 @@ Venstres Ungdom ønsker ikke, at der i Den Europæiske Union indføres fælles m
 Derfor mener Venstres Ungdom, at:
 
 - Det offentlige skal intervenere mindst muligt i den økonomiske sfære. 
-- Staten skal bekæmpe in ation.
+- Staten skal bekæmpe in action.
 - Staten bør ikke gældsætte sig.
 - Skatterne skal sænkes.
 - Skattelovgivningen skal forenkles.
