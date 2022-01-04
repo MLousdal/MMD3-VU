@@ -2,7 +2,7 @@
 title: Principprogrammer
 img: ''
 slug: index
-programmer: [Kultur, Retspolitik]
+programmer: [Arbejdsmarked, Erhverv, EU, Forsvarspolitik, It-politik, Klima, Kultur, Miljø, Religion, Retspolitik, Skat og finans, Social, Sundhed, Trafik og transport, Uddannelse, Udenrigspolitik, Udlændinge og integration]
 ---
 
 <!-- slug: er det url som siden har, skrevet i 'kebab-case' -->
