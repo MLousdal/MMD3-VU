@@ -8,6 +8,12 @@
 
   main {
     width: 100%;
+
+    img {
+      aspect-ratio: 4 / 2;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   .subNav {
@@ -15,5 +21,6 @@
     flex-direction: column;
     align-items: center;
     gap: $unit-1;
+    width: 30%;
   }
 }

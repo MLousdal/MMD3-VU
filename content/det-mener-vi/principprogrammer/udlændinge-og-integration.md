@@ -1,7 +1,7 @@
 ---
 title: Udlændinge og integration
 desc: Læs mere om vores udlændinge og integration principprogram
-slug: Udlændinge-og-integration
+slug: udlændinge-og-integration
 img: integration.jpg
 ---
 

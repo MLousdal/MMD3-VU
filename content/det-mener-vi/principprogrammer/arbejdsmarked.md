@@ -1,7 +1,7 @@
 ---
 title: Arbejdsmarked
 desc: Læs mere om vores arbejdsmarked principprogram
-slug: Arbejdsmarked
+slug: arbejdsmarked
 img: arbejdsmarked.jpg
 ---
 

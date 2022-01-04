@@ -2,42 +2,9 @@
   <div class="subNav">
     <nav class="box">
       <h3>Andre områder</h3>
-      <p>{{ links }}</p>
       <ul>
-        <li>
-          <nuxt-link to="/om-vu/omvu"
-            >Om VU</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/om-vu/historie"
-            >Historie</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/om-vu/karrieremuligheder"
-            >Karrieremuligheder</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/om-vu/medlemsblad"
-            >Medlemsblad</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/om-vu/struktur"
-            >Struktur</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/om-vu/udvalg"
-            >Udvalg</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/om-vu/videoer"
-            >Videoer</nuxt-link
-          >
+        <li v-for="link in links" :key="link.title">
+          <nuxt-link :to="`/om-vu/${link.slug}`">{{ link.title }}</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -50,7 +17,10 @@ import SoMeLinks from './SoMeLinks.vue'
 export default {
   components: { SoMeLinks },
   async asyncData({ $content }) {
-    const links = await $content('om-vu').only(['title', 'slug']).fetch()
+    const links = await $content('det-mener-vi/om-vu')
+      .only(['title', 'slug'])
+      .sortBy('title', 'asc')
+      .fetch()
 
     return {
       links,

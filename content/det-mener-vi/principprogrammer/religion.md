@@ -1,7 +1,7 @@
 ---
 title: Religion
 desc: Læs mere om vores religion principprogram
-slug: Religion
+slug: religion
 img: religion.jpg
 ---
 

@@ -2,14 +2,14 @@
 
 nav.top {
   position: fixed;
-  top: 0;
-  z-index: 5;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: $unit-1;
   font-size: 80%;
+  gap: $unit-1;
+  justify-content: space-between;
+  top: 0;
   transition: all ease-in 0.25s;
+  z-index: 5;
 
   &.box {
     background-color: transparent;
@@ -157,12 +157,12 @@ nav.top {
 }
 
 @media screen and (max-width: 970px) {
-  nav.box {
+  nav.top.box {
     align-items: center;
     background-color: var(--font-color);
     padding: $unit-15 !important;
   }
-  nav .logo {
+  nav.top .logo {
     height: $unit-2;
     width: $unit-2;
     background-color: var(--foreground-color);

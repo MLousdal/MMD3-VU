@@ -2,7 +2,7 @@
 title: Uddannelse
 desc: Læs mere om vores uddannelse principprogram
 slug: uddannelse
-img: Uddannelse.jpg
+img: uddannelse.jpg
 ---
 
 Venstres Ungdom mener grundlæggende, at uddannelsesinstitutioner skal sikres mest mulig frihed. Om det er folkeskolen, ungdomsuddannelserne eller universiteterne, bør institutionerne i videst muligt omfang sikres selvbestemmelse, når det gælder optag, undervisningsmetoder og økonomisk styring med mere. Metodefriheden er hellig, og heraf følger også, at der skal være rig mulighed for niveaudeling.
