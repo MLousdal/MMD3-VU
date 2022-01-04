@@ -1,9 +1,11 @@
 <template>
-  <main class="wrapper column nav-offset">
-    <h2>{{ article[0].title }}</h2>
-    <nuxt-picture :src="`/images/${article[0].img}`"></nuxt-picture>
-    <nuxt-content :document="article[0]"></nuxt-content>
-  </main>
+  <div class="article nav-offset wrapper">
+    <main>
+      <h1>{{ article.title }}</h1>
+      <nuxt-content :document="article"></nuxt-content>
+    </main>
+    <sub-nav></sub-nav>
+  </div>
 </template>
 
 <script>
