@@ -2,7 +2,7 @@
 title: Arbejdsmarked
 desc: Læs mere om vores arbejdsmarked principprogram
 slug: Arbejdsmarked
-img: 
+img: arbejdsmarked.jpg
 ---
 
 Venstres Ungdom anser det danske arbejdsmarked som relativt velfungerende og effektivt. Arbejdsmarkedet skal fortsat være bygget op omkring arbejdsgivere, lønmodtagere og deres respektive organisationer. Staten skal blande sig uden om forholdene på arbejdsmarkedet og alene sikre den enkeltes frihed og rettigheder. Venstres Ungdom mener, at det er i er den offentlige interesse at hjælpe folk i beskæftigelse, såfremt de er på offentlig forsørgelse. Dette ansvar ligger hos kommunerne, og det er fuldt og fast dem, der bestemmer, hvorledes denne beskæftigelsesindsats skal faciliteters.

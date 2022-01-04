@@ -2,7 +2,7 @@
 title: Erhverv
 desc: Læs mere om vores erhverv principprogram
 slug: Erhverv
-img: 
+img: Erhverv.jpg
 ---
 
 I Venstres Ungdom mener vi, at erhvervspolitik først og fremmest skal handle om at gøre produktion og udvikling så let for virksomhederne som overhovedet muligt. Derfor skal bureaukratiet saneres og kontakten til det offentlige forenkles. Vi afskyer ”pick the winner”-strategien og vil i stedet give alle virksomheder de bedst mulige rammevilkår og betingelser for afsætning.

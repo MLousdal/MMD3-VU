@@ -2,7 +2,7 @@
 title: EU
 desc: Læs mere om vores EU principprogram
 slug: EU
-img: 
+img: EU.jpg
 ---
 
 EU er fredens og frihedens projekt. Bag det EU, som vi kender i dag, ligger tanken om at knytte de europæiske lande tættere sammen gennem frihandel og fri bevægelighed for kapital og arbejdskraft, hvorved fremtidige konflikter og krige undgås. I Venstres Ungdom kæmper vi for en styrkelse af netop disse principper frem for et EU, der fremstår som et overregulerende og bureaukratisk monster.

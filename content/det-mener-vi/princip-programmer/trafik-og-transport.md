@@ -2,7 +2,7 @@
 title: Trafik og transport
 desc: Læs mere om vores trafik og transport principprogram
 slug: Trafik-og-transport
-img: 
+img: Transport.jpg
 ---
 
 I Venstres Ungdom mener vi, at man skal sikre mest mulig frihed for den enkelte og størst mulig mobilitet. Derfor bør der ikke skabes kunstig efterspørgsel af kollektiv trafik, men derimod investeres i den infrastruktur, der er behov for, med fokus på at projekterne er samfundsøkonomisk rentable, hvorvidt det gælder vejanlæg, jernbaneanlæg eller andre transportpolitiske anlæg. Derudover bør man altid sikre, at den i forvejen eksisterende kapacitet udnyttes bedst muligt.

@@ -2,7 +2,7 @@
 title: Religion
 desc: Læs mere om vores religion principprogram
 slug: Religion
-img: 
+img: religion.jpg
 ---
 
 I et liberalt samfund er alle frie til at tro på, hvad de ønsker. Dette betyder naturligvis, at der ikke kan eller bør være en statsreligion i et liberalt samfund. Religioners organisationer og praksis er et privat anliggende, der kan organiseres mellem individer. Et liberalt samfund er et sekulært samfund.
