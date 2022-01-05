@@ -2,10 +2,18 @@
   <div class="article nav-offset wrapper">
     <main class="">
       <h1>{{ article.title }}</h1>
-      <nuxt-picture :src="`/images/${article.img}`" :alt="article.title"></nuxt-picture>
+      <nuxt-picture
+        :src="`/images/${article.img}`"
+        :alt="article.title"
+        quality="60"
+      ></nuxt-picture>
       <nuxt-content :document="article" class="offset-top"></nuxt-content>
     </main>
-    <sub-nav title="Principprogrammer" :links="links" :top-link="topLink"></sub-nav>
+    <sub-nav
+      title="Principprogrammer"
+      :links="links"
+      :top-link="topLink"
+    ></sub-nav>
   </div>
 </template>
 
@@ -32,7 +40,7 @@ export default {
     return {
       topLink: {
         title: 'Oversigt',
-        path: '/det-mener-vi'
+        path: '/det-mener-vi',
       },
     }
   },

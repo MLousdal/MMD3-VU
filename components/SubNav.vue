@@ -50,9 +50,11 @@ export default {
   mounted() {
     document.addEventListener('mouseup', function (e) {
       if (window.innerWidth < 970) {
+        const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
         const container = document.querySelector('.subNavLinks')
         if (!container.contains(e.target)) {
           container.style.display = 'none'
+          subNavSomeLinks.style.display = 'none'
         }
       }
     })
@@ -60,10 +62,12 @@ export default {
   destroyed() {
     document.removeEventListener('mouseup', function (e) {
       if (window.innerWidth < 970) {
+        const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
         const container = document.querySelector('.subNavLinks')
         const navBtn = document.querySelector('.navBtn')
         if (!container.contains(e.target || navBtn)) {
           container.style.display = 'none'
+          subNavSomeLinks.style.display = 'none'
         }
       }
     })

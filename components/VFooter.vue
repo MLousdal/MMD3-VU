@@ -14,7 +14,7 @@
             <nuxt-link to="/arrangementer">Arrangementer</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/om-vu">Om VU</nuxt-link>
+            <nuxt-link to="/om-vu/omvu">Om VU</nuxt-link>
           </li>
         </ul>
       </div>
@@ -22,16 +22,16 @@
         <h4>For medlemmer</h4>
         <ul>
           <li>
-            <a href="#">Tilmeld PBS</a>
+            <nuxt-link to="/">Tilmeld PBS</nuxt-link>
           </li>
           <li>
-            <a href="#">Membersite</a>
+            <nuxt-link to="/">Membersite</nuxt-link>
           </li>
           <li>
-            <a href="#">Refusion</a>
+            <nuxt-link to="/">Refusion</nuxt-link>
           </li>
           <li>
-            <a href="#">Indberetning</a>
+            <nuxt-link to="/">Indberetning</nuxt-link>
           </li>
         </ul>
       </div>

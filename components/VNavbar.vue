@@ -11,7 +11,7 @@
         <ul class="navLinks">
           <li>
             <nuxt-link
-              to="/det-mener-vi/"
+              to="/det-mener-vi"
               class="underline"
               @click.native="closeMenu"
               >Det mener vi</nuxt-link
@@ -19,7 +19,7 @@
           </li>
           <li>
             <nuxt-link
-              to="/lokalforeninger/"
+              to="/lokalforeninger"
               class="underline"
               @click.native="closeMenu"
               >Lokalforeninger</nuxt-link
@@ -49,7 +49,16 @@
               >Kontakt os</nuxt-link
             >
           </li>
-          <cta-btn size="l"></cta-btn>
+          <li>
+            <a
+              class="btn secondary grow l cta"
+              href="https://vu.membersite.dk/Membership/BuyMembership"
+              target="_blank"
+              rel="noopener"
+            >
+              Bliv medlem
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -64,57 +73,62 @@
 </template>
 
 <script>
-import CtaBtn from './CtaBtn.vue'
-
 export default {
   name: 'VNavbar',
-  components: { CtaBtn },
   data() {
     return {
-      menuOpen: false,
+      menuOpen: true,
     }
   },
   mounted() {
     document.addEventListener('scroll', this.scrolledEffect)
-
-    document.addEventListener('mouseup', function (e) {
-      if (window.innerWidth < 970) {
-        const container = document.querySelector('.navLinksContainer')
-        if (!container.contains(e.target)) {
-          container.style.display = 'none'
-        }
-      }
+    mqResize()
+    document.addEventListener('mouseup', (e) => {
+      // bruger en arrow function for at overkomme problem med at this. skifter til
+      this.handleOutside(e)
     })
+    function mqResize() {
+      const mql = window.matchMedia('(max-width: 970px)')
+      if (mql.matches) {
+        const navLinksContainer = document.querySelector('.navLinksContainer')
+        navLinksContainer.classList.add('hide')
+      }
+    }
   },
   destroyed() {
     document.removeEventListener('scroll', this.scrolledEffect)
-    document.removeEventListener('mouseup', function (e) {
-      if (window.innerWidth < 970) {
-        const container = document.querySelector('.navLinksContainer')
-        const navBtn = document.querySelector('.navBtn')
-
-        if (!container.contains(e.target || navBtn)) {
-          container.style.display = 'none'
-        }
-      }
+    document.removeEventListener('mouseup', (e) => {
+      this.handleOutside(e)
     })
   },
   methods: {
     closeMenu() {
       const navLinksContainer = document.querySelector('.navLinksContainer')
       if (window.innerWidth < 970) {
-        navLinksContainer.style.display = 'none'
+        navLinksContainer.classList.add('hide')
+        this.menuOpen = true
+      }
+    },
+    openMenu() {
+      const navLinksContainer = document.querySelector('.navLinksContainer')
+      if (window.innerWidth < 970) {
+        navLinksContainer.classList.remove('hide')
         this.menuOpen = false
       }
     },
+    handleOutside(e) {
+      const navbar = document.querySelector('.top')
+      if (window.innerWidth < 970) {
+        if (!navbar.contains(e.target)) {
+          this.closeMenu()
+        }
+      }
+    },
     toggleMenu() {
-      const navLinksContainer = document.querySelector('.navLinksContainer')
-      if (this.menuOpen === false) {
-        navLinksContainer.style.display = 'flex'
-        this.menuOpen = true
+      if (this.menuOpen === true) {
+        this.openMenu()
       } else {
-        navLinksContainer.style.display = 'none'
-        this.menuOpen = false
+        this.closeMenu()
       }
     },
     scrolledEffect() {

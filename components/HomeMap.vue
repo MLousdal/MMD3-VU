@@ -21,7 +21,7 @@
           >
         </div>
       </article>
-      <nuxt-link to="/lokalforeninger" class="map">
+      <nuxt-link to="/lokalforeninger" class="map" aria-label="lokalforeninger">
         <nuxt-picture src="/images/map.png" alt=""></nuxt-picture>
       </nuxt-link>
     </div>

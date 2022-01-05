@@ -92,7 +92,9 @@
   }
 
   &.s:hover,
-  &.s:focus {
+  &.s:focus,
+  &.cta:hover,
+  &.cta:focus {
     transform: scale(1.05);
   }
 }

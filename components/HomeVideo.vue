@@ -9,22 +9,23 @@
           mere om politik og samfundet samtidig med, at du møder andre unge med
           samme interesse som dig.
         </p>
-        <nuxt-link to="/om-vu" class="btn primary grow l">Læs mere om VU</nuxt-link>
+        <nuxt-link to="/om-vu" class="btn primary grow l"
+          >Læs mere om VU</nuxt-link
+        >
       </article>
-      <iframe
-        src="https://www.youtube.com/embed/s4aTjmjnGoc"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        SameSite="Strict"
-      ></iframe>
+      <sub-video :video-url="videoUrl"></sub-video>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      videoUrl: 's4aTjmjnGoc',
+    }
+  },
+}
 </script>
 
 <style></style>
