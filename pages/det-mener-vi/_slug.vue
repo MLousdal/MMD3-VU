@@ -1,13 +1,18 @@
 <template>
-  <main class="wrapper column nav-offset">
-    <h2>{{ article[0].title }}</h2>
-    <nuxt-content :document="article[0]"></nuxt-content>
-    <ul>
-      <li v-for="program in article[0].programmer" :key="program">
-        <nuxt-link :to="`princip-programmer/${program.toLowerCase()}`">{{ program }}</nuxt-link>
-      </li>
-    </ul>
-  </main>
+  <div class="article nav-offset wrapper">
+    <main>
+      <h2>{{ article[0].title }}</h2>
+      <nuxt-content :document="article[0]"></nuxt-content>
+      <ul>
+        <li v-for="program in article[0].programmer" :key="program">
+          <nuxt-link :to="`princip-programmer/${program.toLowerCase()}`">{{
+            program
+          }}</nuxt-link>
+        </li>
+      </ul>
+    </main>
+    <sub-nav></sub-nav>
+  </div>
 </template>
 
 <script>
