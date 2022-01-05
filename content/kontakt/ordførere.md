@@ -35,4 +35,4 @@ personer:
     img: martin.jpg
 ---
 
-testiteitei ite ist
+Her kan du finde alle kontaktinformation på ordførerne i Venstres Ungdom - kontakt os, hvis du er interesseret i at påtage dig en af de ledige pladser.

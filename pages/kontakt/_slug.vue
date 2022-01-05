@@ -2,12 +2,12 @@
   <div class="article nav-offset wrapper">
     <main class="">
       <h1>{{ article.title }}</h1>
-      <nuxt-content :document="article" class="offset-top"></nuxt-content>
+      <nuxt-content :document="article" class="offset-bottom"></nuxt-content>
       <section v-if="article.personer" class="card-grid">
         <sub-card
           v-for="person in article.personer"
           :key="person.name"
-          :contact="person"
+          :content="person"
           card-type="contact"
         ></sub-card>
       </section>

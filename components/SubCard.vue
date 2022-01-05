@@ -1,26 +1,28 @@
 <template>
   <div class="subCard">
     <nuxt-picture
-      v-if="cardType === 'default'"
+      v-if="cardType === 'default' || cardType === 'event'"
       :src="`/images/${content.img}`"
       quality="30"
     ></nuxt-picture>
     <nuxt-picture
       v-if="cardType === 'contact'"
-      :src="`/images/personer/${contact.img}`"
+      :src="`/images/personer/${content.img}`"
       quality="30"
     ></nuxt-picture>
     <div class="box">
-      <h4 v-if="cardType === 'default'">{{ content.title }}</h4>
-      <h4 v-if="cardType === 'contact'">{{ contact.rolle }}</h4>
+      <h4 v-if="cardType === 'default' || cardType === 'event'">
+        {{ content.title }}
+      </h4>
+      <h4 v-if="cardType === 'contact'">{{ content.rolle }}</h4>
       <p v-if="cardType === 'contact'">
-        {{ contact.name }}<br />
-        {{ contact.number }}<br />
-        {{ contact.email }}
+        {{ content.name }}<br />
+        {{ content.number }}<br />
+        {{ content.email }}
       </p>
       <p v-if="cardType === 'event'">
-        {{ event.date }}<br />
-        {{ event.loc }}
+        {{ content.date }}<br />
+        {{ content.loc }}
       </p>
     </div>
   </div>
@@ -34,14 +36,6 @@ export default {
       type: String,
     },
     content: {
-      default() {},
-      type: Object,
-    },
-    contact: {
-      default() {},
-      type: Object,
-    },
-    event: {
       default() {},
       type: Object,
     },

@@ -8,7 +8,7 @@ loc: Venstres gruppeværelse, Christiansborg
 
 SÆT ET KÆMPE X
 
-Den 29. maj er der nemlig endelig udsigter til at få afholdt temadagen Kvinder i politik. Arrangementet er åbent for alle medlemmer, og det foregår i Venstres gruppelokale på Christiansborg. 
+Den 29. maj er der nemlig endelig udsigter til at få afholdt temadagen Kvinder i politik. Arrangementet er åbent for alle medlemmer, og det foregår i Venstres gruppelokale på Christiansborg.
 
 Lokation: Venstres gruppeværelse, Christiansborg
 
