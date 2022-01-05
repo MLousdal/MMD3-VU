@@ -2,6 +2,8 @@
 title: Temadag Kvinder i politik
 slug: temadag-kvinder-i-politik
 img: temadag.jpg
+date: 29. maj 2021
+loc: Venstres gruppeværelse, Christiansborg
 ---
 
 SÆT ET KÆMPE X
