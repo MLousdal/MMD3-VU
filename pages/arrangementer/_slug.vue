@@ -4,15 +4,16 @@
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article" class="offset-bottom"></nuxt-content>
       <section class="card-grid">
-        <sub-card
+        <nuxt-link
           v-for="event in events"
           :key="event.title"
-          :content="event"
-          card-type="event"
-        ></sub-card>
+          :to="`/arrangementer/kommende-begivenheder/${event.slug}`"
+          class="grow s"
+          ><sub-card :content="event" card-type="event"></sub-card
+        ></nuxt-link>
       </section>
     </main>
-    <sub-nav title="Andre arrangementer" :links="links"></sub-nav>
+    <sub-nav title="Andre arrangementer" :links="links" :top-link="topLink"></sub-nav>
   </div>
 </template>
 
@@ -30,6 +31,14 @@ export default {
       article,
       links,
       events,
+    }
+  },
+  data() {
+    return {
+      topLink: {
+        title: 'Oversigt',
+        path: '/arrangementer',
+      },
     }
   },
 }

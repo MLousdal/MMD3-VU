@@ -1,6 +1,6 @@
 ---
 title: Debattøruddannelse
-slug: debattørudannelse
+slug: debattøruddannelse
 img: debattøruddannelse.jpg
 date: 12. juni 2021
 loc:

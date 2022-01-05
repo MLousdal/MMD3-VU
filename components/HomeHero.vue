@@ -10,10 +10,10 @@
         ligesindede unge, der brænder for at lære mere om politik.
       </p>
       <div class="flex row gap-1">
-        <nuxt-link to="/kontakt" class="btn contrast grow l"
+        <nuxt-link to="/kontakt/kontakt-os" class="btn contrast grow l"
           >Kontakt os</nuxt-link
         >
-        <nuxt-link to="/om-vu" class="btn secondary outline grow l"
+        <nuxt-link to="/om-vu/omvu" class="btn secondary outline grow l"
           >Læs mere om VU</nuxt-link
         >
       </div>

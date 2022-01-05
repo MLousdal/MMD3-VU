@@ -13,7 +13,7 @@
           generelle spørgsmål.
         </p>
         <div class="flex row gap-1">
-          <nuxt-link to="/kontakt" class="btn primary grow l"
+          <nuxt-link to="/kontakt/kontakt-os" class="btn primary grow l"
             >Kontakt os</nuxt-link
           >
           <nuxt-link to="/lokalforeninger" class="btn secondary grow l"
