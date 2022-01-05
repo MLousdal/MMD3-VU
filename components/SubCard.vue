@@ -4,11 +4,13 @@
       v-if="cardType === 'default' || cardType === 'event'"
       :src="`/images/${content.img}`"
       quality="30"
+      alt=""
     ></nuxt-picture>
     <nuxt-picture
       v-if="cardType === 'contact'"
       :src="`/images/personer/${content.img}`"
       quality="30"
+      alt=""
     ></nuxt-picture>
     <div class="box">
       <h4 v-if="cardType === 'default' || cardType === 'event'">

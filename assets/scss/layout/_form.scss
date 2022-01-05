@@ -1,0 +1,13 @@
+@use "../base/variables" as *;
+
+#fs-frm fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: $unit-1;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: $unit-05;
+  }
+}

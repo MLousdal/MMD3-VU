@@ -22,7 +22,7 @@
         </div>
       </article>
       <nuxt-link to="/lokalforeninger" class="map">
-        <nuxt-picture src="/images/map.png"></nuxt-picture>
+        <nuxt-picture src="/images/map.png" alt=""></nuxt-picture>
       </nuxt-link>
     </div>
   </section>

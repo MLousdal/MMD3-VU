@@ -16,7 +16,7 @@ input[type="week"],
 textarea,
 select {
   color: var(--font-color-form);
-  padding: $unit-05;
+  padding: $unit-1;
   background-color: #fff;
   border: $border-width solid #d1d1d1;
   border-radius: $border-radius-s;
@@ -24,7 +24,7 @@ select {
   box-sizing: border-box;
 
   &:focus {
-    border: $border-width-thick solid var(--color-primary);
+    border: $border-width-thick solid var(--color-secondary);
     outline: 0;
   }
 }
@@ -38,6 +38,7 @@ legend {
   display: block;
   font-weight: 400;
   font-size: calc(#{$unit-1} * 1.1);
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 fieldset {
