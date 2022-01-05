@@ -2,6 +2,7 @@
   <div class="article nav-offset wrapper">
     <main class="">
       <h1>{{ article.title }}</h1>
+      <nuxt-picture :src="`/images/${article.img}`"></nuxt-picture>
       <nuxt-content :document="article" class="offset-top"></nuxt-content>
     </main>
     <sub-nav

@@ -24,7 +24,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const [article] = await $content('lokalforeninger').fetch()
+    const article = await $content('lokalforeninger/afdelinger', params.slug).fetch()
     const afdelinger = await $content('lokalforeninger/afdelinger')
       .only(['title', 'slug', 'img'])
       .sortBy('title', 'asc')
