@@ -1,7 +1,7 @@
 ---
 title: Temadag Kvinder i politik
 slug: temadag-kvinder-i-politik
-img: 
+img: temadag.jpg
 ---
 
 SÆT ET KÆMPE X
