@@ -14,4 +14,4 @@ I Thy har vi en forening, med medlemmer, hvis fødder er plantet solidt i den jy
 
 I Thy laver vi alt fra uformelle møder med borgmesteren, virksomhedsbesøg på større virksomheder, til at stå midt i en stald, hvor vi hører om det at være på landet, fra en erfaren landmand. Kom og vær med i den lokalforening af Venstres Ungdom, med det absolut fedeste fællesskab. Vi glæder os til se dig!
 
-Vil du høre mere om os, eller se billeder – ja, så skal du endelig besøge vores Facebook, som du finder her på siden. Vi findes også på instagram: @venstresungdomthy.
+Vil du høre mere om os, eller se billeder – ja, så skal du endelig besøge vores [Facebook] (https://www.facebook.com/venstresungdomthy/?ref=bookmarks), som du finder her på siden. Vi findes også på instagram: @venstresungdomthy.
