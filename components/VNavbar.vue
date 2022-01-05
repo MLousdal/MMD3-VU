@@ -28,7 +28,7 @@
             <nuxt-link to="/om-vu/omvu" class="underline">Om VU</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/kontakt" class="underline">Kontakt os</nuxt-link>
+            <nuxt-link to="/kontakt/kontakt-os" class="underline">Kontakt os</nuxt-link>
           </li>
           <cta-btn size="l"></cta-btn>
         </ul>

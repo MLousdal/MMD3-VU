@@ -1,7 +1,7 @@
 <template>
   <div class="subCard">
     <!-- <nuxt-img :src="`/images/${content.img}`"></nuxt-img> -->
-    <nuxt-picture :src="`/images/${content.img}`"></nuxt-picture>
+    <nuxt-picture :src="`/images/${content.img}`" quality="30"></nuxt-picture>
     <div class="box">
       <h4>{{ content.title }}</h4>
       <p v-if="cardType === 'contact'">
@@ -25,6 +25,14 @@ export default {
       type: Object,
     },
     content: {
+      default() {},
+      type: Object,
+    },
+    contact: {
+      default() {},
+      type: Object,
+    },
+    event: {
       default() {},
       type: Object,
     },
