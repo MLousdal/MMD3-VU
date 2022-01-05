@@ -42,20 +42,44 @@ export default {
       type: String,
     },
   },
+  data() {
+    return {
+      menuOpen: false,
+    }
+  },
+  mounted() {
+    document.addEventListener('mouseup', function (e) {
+      if (window.innerWidth < 970) {
+        const container = document.querySelector('.subNavLinks')
+        if (!container.contains(e.target)) {
+          container.style.display = 'none'
+        }
+      }
+    })
+  },
+  destroyed() {
+    document.removeEventListener('mouseup', function (e) {
+      if (window.innerWidth < 970) {
+        const container = document.querySelector('.subNavLinks')
+        const navBtn = document.querySelector('.navBtn')
+        if (!container.contains(e.target || navBtn)) {
+          container.style.display = 'none'
+        }
+      }
+    })
+  },
   methods: {
     toggleMenu() {
-      const subNavLinks = document.querySelector('.subNavLinks')
+      const navLinksContainer = document.querySelector('.subNavLinks')
       const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
-
-      if (
-        subNavLinks.style.display === 'none' ||
-        subNavLinks.style.display === ''
-      ) {
-        subNavLinks.style.display = 'flex'
-        subNavSomeLinks.removeAttribute('style', 'display:none !important')
+      if (this.menuOpen === false) {
+        navLinksContainer.style.display = 'flex'
+        subNavSomeLinks.style.display = 'flex'
+        this.menuOpen = true
       } else {
-        subNavLinks.style.display = 'none'
-        subNavSomeLinks.setAttribute('style', 'display:none !important')
+        navLinksContainer.style.display = 'none'
+        subNavSomeLinks.style.display = 'none'
+        this.menuOpen = false
       }
     },
   },

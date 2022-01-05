@@ -10,25 +10,44 @@
       <div class="navLinksContainer">
         <ul class="navLinks">
           <li>
-            <nuxt-link to="/det-mener-vi/" class="underline"
+            <nuxt-link
+              to="/det-mener-vi/"
+              class="underline"
+              @click.native="closeMenu"
               >Det mener vi</nuxt-link
             >
           </li>
           <li>
-            <nuxt-link to="/lokalforeninger/" class="underline"
+            <nuxt-link
+              to="/lokalforeninger/"
+              class="underline"
+              @click.native="closeMenu"
               >Lokalforeninger</nuxt-link
             >
           </li>
           <li>
-            <nuxt-link to="/arrangementer" class="underline"
+            <nuxt-link
+              to="/arrangementer"
+              class="underline"
+              @click.native="closeMenu"
               >Arrangementer</nuxt-link
             >
           </li>
           <li>
-            <nuxt-link to="/om-vu/omvu" class="underline">Om VU</nuxt-link>
+            <nuxt-link
+              to="/om-vu/omvu"
+              class="underline"
+              @click.native="closeMenu"
+              >Om VU</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="/kontakt/kontakt-os" class="underline">Kontakt os</nuxt-link>
+            <nuxt-link
+              to="/kontakt/kontakt-os"
+              class="underline"
+              @click.native="closeMenu"
+              >Kontakt os</nuxt-link
+            >
           </li>
           <cta-btn size="l"></cta-btn>
         </ul>
@@ -50,23 +69,52 @@ import CtaBtn from './CtaBtn.vue'
 export default {
   name: 'VNavbar',
   components: { CtaBtn },
+  data() {
+    return {
+      menuOpen: false,
+    }
+  },
   mounted() {
     document.addEventListener('scroll', this.scrolledEffect)
+
+    document.addEventListener('mouseup', function (e) {
+      if (window.innerWidth < 970) {
+        const container = document.querySelector('.navLinksContainer')
+        if (!container.contains(e.target)) {
+          container.style.display = 'none'
+        }
+      }
+    })
   },
   destroyed() {
     document.removeEventListener('scroll', this.scrolledEffect)
+    document.removeEventListener('mouseup', function (e) {
+      if (window.innerWidth < 970) {
+        const container = document.querySelector('.navLinksContainer')
+        const navBtn = document.querySelector('.navBtn')
+
+        if (!container.contains(e.target || navBtn)) {
+          container.style.display = 'none'
+        }
+      }
+    })
   },
   methods: {
+    closeMenu() {
+      const navLinksContainer = document.querySelector('.navLinksContainer')
+      if (window.innerWidth < 970) {
+        navLinksContainer.style.display = 'none'
+        this.menuOpen = false
+      }
+    },
     toggleMenu() {
       const navLinksContainer = document.querySelector('.navLinksContainer')
-
-      if (
-        navLinksContainer.style.display === 'none' ||
-        navLinksContainer.style.display === ''
-      ) {
+      if (this.menuOpen === false) {
         navLinksContainer.style.display = 'flex'
+        this.menuOpen = true
       } else {
         navLinksContainer.style.display = 'none'
+        this.menuOpen = false
       }
     },
     scrolledEffect() {

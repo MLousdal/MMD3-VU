@@ -75,6 +75,14 @@
   opacity: 0;
 }
 
+@media screen and (max-width: 970px) {
+  .page-enter-active,
+  .page-leave-active {
+    .navLinksContainer {
+      display: none !important;
+    }
+  }
+}
 .grow {
   transition: all 0.45s;
 
