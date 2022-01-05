@@ -7,11 +7,12 @@
     ></nuxt-picture>
     <nuxt-picture
       v-if="cardType === 'contact'"
-      :src="`/images/${contact.img}`"
+      :src="`/images/personer/${contact.img}`"
       quality="30"
     ></nuxt-picture>
     <div class="box">
       <h4 v-if="cardType === 'default'">{{ content.title }}</h4>
+      <h4 v-if="cardType === 'contact'">{{ contact.rolle }}</h4>
       <p v-if="cardType === 'contact'">
         {{ contact.name }}<br />
         {{ contact.number }}<br />
