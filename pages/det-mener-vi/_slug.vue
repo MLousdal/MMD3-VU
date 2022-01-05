@@ -8,6 +8,7 @@
           v-for="page in pages"
           :key="page.title"
           :to="`/det-mener-vi/principprogrammer/${page.slug}`"
+          class="grow s"
           ><sub-card :content="page"></sub-card
         ></nuxt-link>
       </section>
