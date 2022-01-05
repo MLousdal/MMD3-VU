@@ -2,15 +2,7 @@
   <div class="article nav-offset wrapper">
     <main class="">
       <h1>{{ article.title }}</h1>
-      <nuxt-content :document="article" class="offset-bottom"></nuxt-content>
-      <section class="card-grid">
-        <sub-card
-          v-for="event in events"
-          :key="event.title"
-          :content="event"
-          card-type="event"
-        ></sub-card>
-      </section>
+      <nuxt-content :document="article" class="offset-top"></nuxt-content>
     </main>
     <sub-nav title="Andre arrangementer" :links="links"></sub-nav>
   </div>
@@ -19,8 +11,10 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const [article] = await $content('arrangementer').fetch()
-    const events = await $content('arrangementer/kommende-begivenheder').fetch()
+    const article = await $content(
+      'arrangementer/kommende-begivenheder',
+      params.slug
+    ).fetch()
     const links = await $content('arrangementer/kommende-begivenheder')
       .only(['title', 'path'])
       .sortBy('title', 'asc')
@@ -29,7 +23,6 @@ export default {
     return {
       article,
       links,
-      events,
     }
   },
 }

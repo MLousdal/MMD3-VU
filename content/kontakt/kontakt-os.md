@@ -6,7 +6,7 @@ slug: kontakt-os
 Henvendelse via telefon og e-mail til sekretariatet
 Sekretariatet kan kontaktes på telefonnr. 70 23 51 51 på disse tidspunkter:
 
-|         |                     |
+|     **Dag** |          **Åbningstid** |
 | ------: | ------------------: |
 |  Mandag | Kl. 10.30 til 17.00 |
 | Tirsdag | Kl. 10.30 til 17.00 |
