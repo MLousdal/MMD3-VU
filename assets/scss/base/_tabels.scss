@@ -4,6 +4,7 @@ table {
   width: 100%;
 }
 
+
 th,
 td {
   padding: $unit-1 $unit-05;
@@ -14,11 +15,17 @@ td {
   &:not(:first-child, :last-child) {
     padding: inherit 0;
   }
+  &:last-child {
+    text-align: right;
+  }
 }
+
+
 
 th {
   border-bottom: $border-width-thick solid var(--border);
 }
+
 
 @media (max-width: 550px) {
   .table-container {
@@ -26,3 +33,5 @@ th {
     overflow-x: scroll;
   }
 }
+
+
