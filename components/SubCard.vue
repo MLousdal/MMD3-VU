@@ -1,9 +1,17 @@
 <template>
   <div class="subCard">
-    <!-- <nuxt-img :src="`/images/${content.img}`"></nuxt-img> -->
-    <nuxt-picture :src="`/images/${content.img}`" quality="30"></nuxt-picture>
+    <nuxt-picture
+      v-if="cardType === 'default'"
+      :src="`/images/${content.img}`"
+      quality="30"
+    ></nuxt-picture>
+    <nuxt-picture
+      v-if="cardType === 'contact'"
+      :src="`/images/${contact.img}`"
+      quality="30"
+    ></nuxt-picture>
     <div class="box">
-      <h4>{{ content.title }}</h4>
+      <h4 v-if="cardType === 'default'">{{ content.title }}</h4>
       <p v-if="cardType === 'contact'">
         {{ contact.name }}<br />
         {{ contact.number }}<br />
@@ -21,8 +29,8 @@
 export default {
   props: {
     cardType: {
-      default() {},
-      type: Object,
+      default: 'default',
+      type: String,
     },
     content: {
       default() {},

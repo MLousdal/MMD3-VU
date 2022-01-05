@@ -3,6 +3,14 @@
     <main class="">
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article" class="offset-top"></nuxt-content>
+      <section v-if="article.personer" class="card-grid">
+        <sub-card
+          v-for="person in article.personer"
+          :key="person.name"
+          :contact="person"
+          card-type="contact"
+        ></sub-card>
+      </section>
     </main>
     <sub-nav title="Andre områder" :links="links"></sub-nav>
   </div>
