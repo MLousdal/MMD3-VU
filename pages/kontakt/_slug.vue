@@ -9,6 +9,7 @@
           :key="person.name"
           :content="person"
           card-type="contact"
+          class="contact"
         ></sub-card>
       </section>
     </main>

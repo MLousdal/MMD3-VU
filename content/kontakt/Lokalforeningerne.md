@@ -1,6 +1,6 @@
 ---
-title: Ordførere
-slug: ordførere
+title: Lokalforeningerne
+slug: lokalforeningerne
 personer:
   - name: Sigurd Hilligsø Andersen
     number: 20 34 61 37
@@ -23,11 +23,15 @@ personer:
     rolle: Gladsaxe
     img: mathias.jpg
   - name: Emil Nørrevang
+    number: 26 27 42 29
     rolle: Brønderslev
+    email: mathias.rinaldo@venstrehvidovre.dk
     img: jens.jpg
   - name: Jonas Pullich Knudsen
-    rolle: Djursland
-    img: nicolaj.jpg
+    number: 26 27 42 29
+    rolle: Djursland    
+    email: mathias.rinaldo@venstrehvidovre.dk
+    img: jonas.jpg
   - name: Martin Dommerby
     number: 40 32 21 63
     email: Dommerby@vu.dk

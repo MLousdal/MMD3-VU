@@ -13,7 +13,11 @@
         ></nuxt-link>
       </section>
     </main>
-    <sub-nav title="Ordfører områder" :links="links"></sub-nav>
+    <sub-nav
+      title="Ordfører områder"
+      :links="links"
+      :top-link="topLink"
+    ></sub-nav>
   </div>
 </template>
 
@@ -37,6 +41,14 @@ export default {
       article,
       pages,
       links,
+    }
+  },
+  data() {
+    return {
+      topLink: {
+        title: 'Principprogrammer',
+        path: '/det-mener-vi',
+      },
     }
   },
 }

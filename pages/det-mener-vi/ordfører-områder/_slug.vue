@@ -4,7 +4,11 @@
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article"></nuxt-content>
     </main>
-    <sub-nav title="Ordfører områder" :links="links"></sub-nav>
+    <sub-nav
+      title="Ordfører områder"
+      :links="links"
+      :top-link="topLink"
+    ></sub-nav>
   </div>
 </template>
 
@@ -23,6 +27,14 @@ export default {
     return {
       article,
       links,
+    }
+  },
+  data() {
+    return {
+      topLink: {
+        title: 'Principprogrammer',
+        path: '/det-mener-vi',
+      },
     }
   },
 }

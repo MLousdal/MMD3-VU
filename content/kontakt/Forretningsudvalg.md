@@ -56,12 +56,12 @@ personer:
     number: 24 62 77 22
     email: Hesel@vu.dk
     rolle: Fritvalgt
-    img: lars.jpg    
+    img: lars.jpg
   - name: Frederik Bast Phillip
     number: 31 26 69 52
     email: Hesel@vu.dk
     rolle: Landssekretær
-    img: frederik.jpg    
+    img: frederik.jpg
 ---
 
-testiteitei ite ist
+Her kan du finde alle kontaktinformation på forretningsudvalgt i Venstres Ungdom - kontakt os, hvis du er interesseret i at påtage dig en af de ledige pladser.
