@@ -1,8 +1,8 @@
 ---
-title: It-miljø
+title: IT-politik
 desc: Læs mere om vores it-miljø principprogram
-slug: It-miljø
-img: 
+slug: it-politik
+img: itpolitik.jpg
 ---
 
 Den globale teknologiske udvikling siden 90’erne har sat voldsomt pres på den enkelte borgers retssikkerhed. For liberale er frihed en uindskrænket ret til at gøre, hvad man har lyst til, såvel i samfundet som i den digitale verden inden for lovlighedens grænser. Den digitale tidsalder har bragt nye muligheder med sig, som staten igennem de senere år er begyndt at undergrave og misbruge med massiv masseovervågning.

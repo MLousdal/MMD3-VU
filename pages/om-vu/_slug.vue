@@ -4,7 +4,7 @@
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article"></nuxt-content>
     </main>
-    <sub-nav></sub-nav>
+    <sub-nav title="Andet om VU" :links="links"></sub-nav>
   </div>
 </template>
 
@@ -12,9 +12,14 @@
 export default {
   async asyncData({ $content, params }) {
     const article = await $content('om-vu', params.slug).fetch()
+    const links = await $content('om-vu')
+      .only(['title', 'path'])
+      .sortBy('title', 'asc')
+      .fetch()
 
     return {
       article,
+      links,
     }
   },
 }

@@ -1,8 +1,8 @@
 ---
 title: Miljø
 desc: Læs mere om vores Miljø principprogram
-slug: Miljø
-img: 
+slug: miljø
+img: miljø.jpg
 ---
 
 I Venstres Ungdom er landbruget en del af vores DNA. Det er der som vores grundlæggere kommer fra. Derfor skal vi også kære og sikre os, at vores landbrug bliver sikret de bedste og mest fordelagtige vilkår, til at skabe et stærkt dansk landbrug på et globalt hårdt marked. Det danske landbrug er i forvejen et af verdens grønneste landbrug – både miljømæssigt og klimamæssigt. Derfor skal landbruget heller ikke straffes urimeligt hårdt. Vores afgifter i Danmark skal følge de europæiske på området – vi skal ikke lave særafgifter, der rammer danske landmænd hårdere end deres europæiske kollegaer.

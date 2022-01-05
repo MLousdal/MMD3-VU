@@ -1,8 +1,8 @@
 ---
 title: Social
 desc: Læs mere om vores social principprogram
-slug: Social
-img: 
+slug: social
+img: social.jpg
 ---
 
 Som liberale anser vi støtte til socialt svage som en opgave, der i høj grad skal løftes af civilsamfundet med støtte fra staten. Det offentlige, frivillighed og det private skal spille sammen så alle mennesker, uanset deres individuelle udfordringer, opnår den bedst mulige levestandard. Ingen kan fraskrive sig ansvaret alene fordi, de har betalt skat, og det er centralt, at vi anser alle socialt udfordrede som individer, der primært skal løftes af frivillige fællesskaber.

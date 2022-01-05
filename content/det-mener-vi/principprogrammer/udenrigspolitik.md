@@ -1,8 +1,8 @@
 ---
 title: Udenrigspolitik
 desc: Læs mere om vores udenrigspolitik principprogram
-slug: Udenrigspolitik
-img: 
+slug: udenrigspolitik
+img: udenrigspolitik.jpg
 ---
 
 Dansk udenrigspolitik bør bindes op på to centrale mål: at skabe mest mulig frihed for flest mulig mennesker verden over, og at sikre dansk sikkerhed og fred. Derfor er det afgørende, at Danmark i en global verden engagerer sig i kampen mod såvel mellemøstlige slyngelstater som aggressioner fra totalitære regimer. NATO-alliancen er central i den danske sikkerhedspolitik, og vi er både afhængige af og forpligtede på at leve op til vores forsvarspolitiske musketéred.

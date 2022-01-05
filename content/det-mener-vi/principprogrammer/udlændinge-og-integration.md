@@ -1,8 +1,8 @@
 ---
 title: Udlændinge og integration
 desc: Læs mere om vores udlændinge og integration principprogram
-slug: Udlændinge-og-integration
-img: 
+slug: udlændinge-og-integration
+img: integration.jpg
 ---
 
 Venstres Ungdom mener, at Danmark er forpligtet til at påtage sig sin del af det internationale ansvar, der følger af globale flygtningestrømme. Dette skal dog foregå med respekt for, at det danske samfund i sin grundform skal kunne overleve, og at vores demokratiske værdier ikke må komme under pres som følge af dette ansvar. Vi ønsker derfor at hjælpe, der hvor pengene strækker længst. Så mange flygtninge som muligt skal hjælpes i nærområderne således, at flest muligt hjælpes i vante rammer og med minimal belastning af det danske samfund.

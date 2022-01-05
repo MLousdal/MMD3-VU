@@ -1,7 +1,7 @@
 ---
 title: Kultur
 desc: Læs mere om vores kultur principprogram
-slug: Kultur
+slug: kultur
 img: kultur.jpg
 ---
 

@@ -1,0 +1,20 @@
+@use "../base/variables" as *;
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $unit-1;
+  width: 100%;
+}
+
+@media screen and (max-width: 1365px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

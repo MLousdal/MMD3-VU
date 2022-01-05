@@ -1,61 +1,13 @@
 <template>
   <div class="subNav">
     <nav class="box">
-      <h3>Ordfører områder</h3>
+      <h3>{{ title }}</h3>
       <ul>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/arbejdsmarked-erhverv"
-            >Arbejdsmarked og erhverv</nuxt-link
-          >
+        <li v-if="topLink">
+          <nuxt-link :to="`${topLink.path}`">{{ topLink.title }}</nuxt-link>
         </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/eu"
-            >EU</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/klima-miljø-transport"
-            >Klima, miljø og transport</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/retspolitik"
-            >Retspolitik</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/skat-finans"
-            >Skat og finans</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/social-sundhed-kommunal"
-            >Social, Sundhed og Kommunal</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/uddannelse"
-            >Uddannelse</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/udenrigs-forsvarspolitik"
-            >Udenrigs og forsvarspolitik</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link
-            to="/det-mener-vi/ordfører-områder/udlændinge-og-intergration "
-            >Udlændinge - og Intergration</nuxt-link
-          >
+        <li v-for="link in links" :key="link.title">
+          <nuxt-link :to="`${link.path}`">{{ link.title }}</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -67,6 +19,20 @@
 import SoMeLinks from './SoMeLinks.vue'
 export default {
   components: { SoMeLinks },
+  props: {
+    topLink: {
+      default() {},
+      type: Object,
+    },
+    links: {
+      default() {},
+      type: Array,
+    },
+    title: {
+      default: '',
+      type: String,
+    },
+  },
 }
 </script>
 

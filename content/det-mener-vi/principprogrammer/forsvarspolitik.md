@@ -1,8 +1,8 @@
 ---
-title: Udenrigspolitik
-desc: Læs mere om vores udenrigspolitik principprogram
-slug: Udenrigspolitik
-img: 
+title: Forsvars politik
+desc: Læs mere om vores forsvarspolitik principprogram
+slug: forsvarspolitik
+img: forsvarspolitik.jpg
 ---
 
 Forudsætningen for en liberal udenrigspolitik er stærke alliancer og et stærkt forsvar. Danmark er afhængig af NATO, og NATO er det primære instrument gennem hvilket, vi kan praktisere vores udenrigspolitiske målsætninger de steder, hvor militær magt er påkrævet. Som et lille land skal vi investere betragtelige ressourcer i forsvaret for at have reel indflydelse, og dette betyder også, at det danske forsvarsbudget bør ligge på et niveau, der er væsentligt højere end vores NATO-forpligtigelse.

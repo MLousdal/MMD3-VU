@@ -5,20 +5,35 @@
       <nuxt-picture :src="`/images/${article.img}`"></nuxt-picture>
       <nuxt-content :document="article" class="offset-top"></nuxt-content>
     </main>
-    <sub-nav></sub-nav>
+    <sub-nav title="Principprogrammer" :links="links" :top-link="topLink"></sub-nav>
   </div>
 </template>
 
 <script>
+import SubNav from '~/components/SubNav.vue'
 export default {
+  components: { SubNav },
   async asyncData({ $content, params }) {
     const article = await $content(
-      'det-mener-vi/princip-programmer/',
+      'det-mener-vi/principprogrammer/',
       params.slug
     ).fetch()
+    const links = await $content('det-mener-vi/principprogrammer')
+      .only(['title', 'path'])
+      .sortBy('title', 'asc')
+      .fetch()
 
     return {
       article,
+      links,
+    }
+  },
+  data() {
+    return {
+      topLink: {
+        title: 'Oversigt',
+        path: '/det-mener-vi'
+      },
     }
   },
 }

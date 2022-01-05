@@ -1,27 +1,41 @@
 <template>
   <div class="article nav-offset wrapper">
     <main>
-      <h2>{{ article[0].title }}</h2>
-      <nuxt-content :document="article[0]"></nuxt-content>
-      <ul>
-        <li v-for="program in article[0].programmer" :key="program">
-          <nuxt-link :to="`princip-programmer/${program.toLowerCase()}`">{{
-            program
-          }}</nuxt-link>
-        </li>
-      </ul>
+      <h2>{{ article.title }}</h2>
+      <nuxt-content :document="article" class="offset-bottom"></nuxt-content>
+      <section class="card-grid">
+        <nuxt-link
+          v-for="page in pages"
+          :key="page.title"
+          :to="`/det-mener-vi/principprogrammer/${page.slug}`"
+          ><sub-card :content="page"></sub-card
+        ></nuxt-link>
+      </section>
     </main>
-    <sub-nav></sub-nav>
+    <sub-nav title="Ordfører områder" :links="links"></sub-nav>
   </div>
 </template>
 
 <script>
+import SubCard from '~/components/SubCard.vue'
+import SubNav from '~/components/SubNav.vue'
 export default {
-  async asyncData({ $content, params }) {
-    const article = await $content('det-mener-vi', params.slug).fetch()
+  components: { SubCard, SubNav },
+  async asyncData({ $content }) {
+    const [article] = await $content('det-mener-vi').fetch()
+    const pages = await $content('det-mener-vi/principprogrammer')
+      .only(['title', 'slug', 'img'])
+      .sortBy('title', 'asc')
+      .fetch()
+    const links = await $content('det-mener-vi/ordfører-områder')
+      .only(['title', 'path'])
+      .sortBy('title', 'asc')
+      .fetch()
 
     return {
       article,
+      pages,
+      links,
     }
   },
 }
