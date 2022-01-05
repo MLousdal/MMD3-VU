@@ -12,7 +12,7 @@
         ></sub-card>
       </section>
     </main>
-    <sub-nav title="Andre områder" :links="links"></sub-nav>
+    <sub-nav title="Oversigt" :links="links"></sub-nav>
   </div>
 </template>
 

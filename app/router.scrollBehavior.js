@@ -7,17 +7,9 @@ export default function (to, from, savedPosition) {
     }
   }
 
-  if (savedPosition) {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve({ savedPosition, behavior: 'instant' })
-      }, 190)
-    })
-  } else {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve({ x: 0, y: 0, behavior: 'instant' })
-      }, 190)
-    })
-  }
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ x: 0, y: 0, behavior: 'instant' })
+    }, 190)
+  })
 }

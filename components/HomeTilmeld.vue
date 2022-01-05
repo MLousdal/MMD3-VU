@@ -7,8 +7,8 @@
       og mere frihed.
     </p>
     <div class="flex row gap-1">
-      <nuxt-link to="/kontakt" class="btn contrast grow l">Kontakt os</nuxt-link>
-      <nuxt-link to="/kontakt" class="btn secondary grow l"
+      <nuxt-link to="/kontakt/kontakt-os" class="btn contrast grow l">Kontakt os</nuxt-link>
+      <nuxt-link to="/kontakt/kontakt-os" class="btn secondary grow l"
         >Find lokalforening</nuxt-link
       >
     </div>
