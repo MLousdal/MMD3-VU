@@ -29,7 +29,7 @@ export default {
       .only(['title', 'slug', 'img'])
       .sortBy('title', 'asc')
       .fetch()
-    const links = await $content('lokalforeninger/afdelinger')
+    const links = await $content('lokalforeninger')
       .only(['title', 'path'])
       .sortBy('title', 'asc')
       .fetch()
