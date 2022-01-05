@@ -1,8 +1,17 @@
 <template>
   <div class="subNav">
     <nav class="box">
-      <h3>{{ title }}</h3>
-      <ul>
+      <header>
+        <h3>{{ title }}</h3>
+        <input
+          type="image"
+          src="/icons/mdi_menu.svg"
+          alt="menu"
+          class="icon filter-primary navBtn"
+          @click="toggleMenu"
+        />
+      </header>
+      <ul class="subNavLinks">
         <li v-if="topLink">
           <nuxt-link :to="`${topLink.path}`">{{ topLink.title }}</nuxt-link>
         </li>
@@ -11,7 +20,7 @@
         </li>
       </ul>
     </nav>
-    <so-me-links></so-me-links>
+    <so-me-links class="subNavSomeLinks"></so-me-links>
   </div>
 </template>
 
@@ -31,6 +40,23 @@ export default {
     title: {
       default: '',
       type: String,
+    },
+  },
+  methods: {
+    toggleMenu() {
+      const subNavLinks = document.querySelector('.subNavLinks')
+      const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
+
+      if (
+        subNavLinks.style.display === 'none' ||
+        subNavLinks.style.display === ''
+      ) {
+        subNavLinks.style.display = 'flex'
+        subNavSomeLinks.removeAttribute('style', 'display:none !important')
+      } else {
+        subNavLinks.style.display = 'none'
+        subNavSomeLinks.setAttribute('style', 'display:none !important')
+      }
     },
   },
 }

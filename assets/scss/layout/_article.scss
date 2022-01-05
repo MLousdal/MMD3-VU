@@ -36,5 +36,9 @@
       gap: $unit-1;
       width: 100%;
     }
+
+    &.nav-offset.wrapper {
+      padding-top: $unit-5;
+    }
   }
 }
