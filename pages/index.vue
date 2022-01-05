@@ -19,13 +19,13 @@ import HomeTestimonials from '~/components/HomeTestimonials.vue'
 import HomeVideo from '~/components/HomeVideo.vue'
 export default {
   name: 'IndexPage',
-  components: { HomeHero, HomeVideo, HomeMap, HomeSocial, HomeTestimonials, HomeFollow },
-  async asyncData({ $content, params }) {
-    const kultur = await $content('').fetch()
-
-    return {
-      kultur,
-    }
+  components: {
+    HomeHero,
+    HomeVideo,
+    HomeMap,
+    HomeSocial,
+    HomeTestimonials,
+    HomeFollow,
   },
 }
 </script>
