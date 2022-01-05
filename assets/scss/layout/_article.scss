@@ -24,3 +24,17 @@
     width: 30%;
   }
 }
+
+@media screen and (max-width: 970px) {
+  .article {
+    flex-direction: column-reverse;
+
+    .subNav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $unit-1;
+      width: 100%;
+    }
+  }
+}

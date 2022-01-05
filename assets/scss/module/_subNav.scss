@@ -1,6 +1,6 @@
 @use "../base/variables" as *;
 
-.subNav nav{
+.subNav nav {
   background-color: var(--foreground-color);
   border-radius: $border-radius-s;
   color: var(--color-primary);
@@ -20,13 +20,6 @@
     li {
       margin-bottom: $unit-05;
       height: fit-content;
-    }
-  }
-
-  a {
-    &:hover,
-    &:focus {
-      // text-decoration: none;
     }
   }
 }

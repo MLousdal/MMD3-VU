@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+nav.top .nuxt-link-exact-active {
+  padding-bottom: 2px;
+  background: linear-gradient(var(--font-color), var(--font-color)) bottom;
+  background-size: 75% 2px;
+  background-repeat: no-repeat;
+}
+
+.subNav nav .nuxt-link-exact-active {
+  text-decoration: underline;
+}

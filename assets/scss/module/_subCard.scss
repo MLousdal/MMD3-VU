@@ -7,10 +7,12 @@
   overflow: hidden;
   transition: ease-in 0.25s;
   text-align: center;
+  height: 100%;
 
   .box {
     position: relative;
     z-index: 1;
+    height: 100%;
   }
 
   &.contact {

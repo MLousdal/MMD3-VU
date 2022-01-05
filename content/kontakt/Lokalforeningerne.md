@@ -19,18 +19,18 @@ personer:
     img: carl.jpg
   - name: Mathias Rinaldo
     number: 26 27 42 29
-    email: mathias.rinaldo@venstrehvidovre.dk
+    email: mathias.rinaldo@vhvidovre.dk
     rolle: Gladsaxe
     img: mathias.jpg
   - name: Emil Nørrevang
     number: 26 27 42 29
     rolle: Brønderslev
-    email: mathias.rinaldo@venstrehvidovre.dk
+    email: mathias.rinaldo@vhvidovre.dk
     img: jens.jpg
   - name: Jonas Pullich Knudsen
     number: 26 27 42 29
     rolle: Djursland    
-    email: mathias.rinaldo@venstrehvidovre.dk
+    email: mathias.rinaldo@vhvidovre.dk
     img: jonas.jpg
   - name: Martin Dommerby
     number: 40 32 21 63

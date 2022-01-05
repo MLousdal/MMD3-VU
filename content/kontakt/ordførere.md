@@ -19,14 +19,18 @@ personer:
     img: carl.jpg
   - name: Mathias Rinaldo
     number: 26 27 42 29
-    email: mathias.rinaldo@venstrehvidovre.dk
+    email: mathias.rinaldo@vhvidovre.dk
     rolle: Social-,sundhed-, og kommunalordfører
     img: mathias.jpg
   - name: Emil Nørrevang
     rolle: Fritvalgt i politisk udvalg
+    number: 60 56 42 42
+    email: carlwg@outlook.dk
     img: emil.jpg
   - name: Jonas Pullich Knudsen
     rolle: Fritvalgt i politisk udvalg
+    number: 60 56 42 42
+    email: carlwg@outlook.dk
     img: jonas.jpg
   - name: Martin Dommerby
     number: 40 32 21 63
