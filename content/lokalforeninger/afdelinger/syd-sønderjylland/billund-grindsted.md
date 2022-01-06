@@ -1,6 +1,6 @@
 ---
-title: Thy
-slug: thy
+title: Billund/Grindsted
+slug: billund-grindsted
 personer:
   - name: Søren Lousdal
     number: 24268003

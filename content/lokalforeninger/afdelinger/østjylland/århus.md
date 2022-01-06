@@ -1,15 +1,15 @@
 ---
-title: Aalborg
-slug: aalborg
+title: Århus
+slug: århus
 personer:
+  - name: Martin Dommerby
+    number: 60442333
+    email: martindommerby@hotmail.com
+    img: martin.jpg
   - name: Lasse B. Sørensen
     number: 60442333
     email: lbs@vu.dk
     img: lasse.jpg
-  - name: Caroline Møller
-    number: 12312312
-    email: caroline.moeller97@hotmail.com
-    img: 
 ---
 VU Aalborg er en af Venstres Ungdoms mange lokalforeninger.
 
@@ -22,6 +22,6 @@ Hver mandag afholder vi mandagsmøde med en masse spændende og aktuelle oplægs
 
 Alt går dog ikke op i politik. VU Aalborg er garant for en lang række fantastiske fester, hvor vi cirka én gang om måneden holder fest enten lokalt i Aalborg eller via større arrangementer i vores landsorganisation. Det behøver heller ikke altid at være så formelt; vi mødes jævnligt til en stille aften med hyggeligt samvær og eksempelvis en dyst i Bezzerwizzer.
 
-Du kan læse mere på vores [Facebook] (https://www.facebook.com/vuaalborg)-page.
+Du kan læse mere på vores Facebook-page.
 
 Du er til enhver tid velkommen til at kigge forbi vores lokaler til et af vores arrangementer, eller du kan kontakte os, hvis du ønsker at høre nærmere.

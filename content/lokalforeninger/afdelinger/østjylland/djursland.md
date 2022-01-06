@@ -1,6 +1,6 @@
 ---
-title: Aalborg
-slug: aalborg
+title: Djursland
+slug: djursland
 personer:
   - name: Lasse B. Sørensen
     number: 60442333

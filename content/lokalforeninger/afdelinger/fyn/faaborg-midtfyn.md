@@ -1,6 +1,6 @@
 ---
-title: Thy
-slug: thy
+title: Faaborg-Midtfyn
+slug: faaborg-midtfyn
 personer:
   - name: Søren Lousdal
     number: 24268003

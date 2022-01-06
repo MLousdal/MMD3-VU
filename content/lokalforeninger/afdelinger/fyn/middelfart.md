@@ -1,6 +1,6 @@
 ---
-title: Aalborg
-slug: aalborg
+title: Middelfart
+slug: middelfart
 personer:
   - name: Lasse B. Sørensen
     number: 60442333

@@ -1,6 +1,6 @@
 ---
-title: Thy
-slug: thy
+title: Favrskov
+slug: favrskov
 personer:
   - name: Søren Lousdal
     number: 24268003

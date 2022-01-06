@@ -1,6 +1,6 @@
 ---
-title: Brønderslev
-slug: brønderslev
+title: Aabenraa
+slug: aabenraa
 personer:
   - name: Martin Dommerby
     number: 60442333

@@ -1,6 +1,6 @@
 ---
-title: Brønderslev
-slug: brønderslev
+title: Allerød
+slug: allerød
 personer:
   - name: Martin Dommerby
     number: 60442333
