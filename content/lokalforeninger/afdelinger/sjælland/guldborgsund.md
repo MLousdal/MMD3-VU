@@ -1,6 +1,6 @@
 ---
-title: Aalborg
-slug: aalborg
+title: Guldborgsund
+slug: guldborgsund
 personer:
   - name: Lasse B. Sørensen
     number: 60442333

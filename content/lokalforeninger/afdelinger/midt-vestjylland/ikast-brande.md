@@ -1,6 +1,6 @@
 ---
-title: Aalborg
-slug: aalborg
+title: Ikast-Brande
+slug: ikast-brande
 personer:
   - name: Lasse B. Sørensen
     number: 60442333

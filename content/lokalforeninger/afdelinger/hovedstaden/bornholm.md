@@ -1,6 +1,6 @@
 ---
-title: Thy
-slug: thy
+title: Bornholm
+slug: bornholm
 personer:
   - name: Søren Lousdal
     number: 24268003

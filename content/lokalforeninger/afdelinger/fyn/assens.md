@@ -1,6 +1,6 @@
 ---
-title: Brønderslev
-slug: brønderslev
+title: Assens
+slug: assens
 personer:
   - name: Martin Dommerby
     number: 60442333

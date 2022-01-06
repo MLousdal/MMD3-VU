@@ -1,6 +1,6 @@
 ---
-title: Aalborg
-slug: aalborg
+title: Faxe
+slug: faxe
 personer:
   - name: Lasse B. Sørensen
     number: 60442333

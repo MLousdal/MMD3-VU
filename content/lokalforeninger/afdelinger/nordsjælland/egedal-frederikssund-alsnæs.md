@@ -1,6 +1,6 @@
 ---
-title: Thy
-slug: thy
+title: Egedal, Frederikssund og Halsnæs
+slug: egedal-frederikssund-alsnæs
 personer:
   - name: Søren Lousdal
     number: 24268003

@@ -1,6 +1,6 @@
 ---
-title: Thy
-slug: thy
+title: Greve/Solrød
+slug: greve-solrød
 personer:
   - name: Søren Lousdal
     number: 24268003
