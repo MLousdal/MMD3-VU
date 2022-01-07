@@ -4,15 +4,15 @@
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article"></nuxt-content>
     </main>
-    <sub-nav title="Andet om VU" :links="links" :sub-link="subLink"></sub-nav>
+    <sub-nav title="Andet om VU" :links="links" :top-link="topLink"></sub-nav>
   </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('om-vu', params.slug).fetch()
-    const links = await $content('om-vu')
+    const article = await $content('om-vu/samværspolitik', params.slug).fetch()
+    const links = await $content('om-vu/samværspolitik')
       .only(['title', 'path'])
       .sortBy('title', 'asc')
       .fetch()
@@ -24,9 +24,9 @@ export default {
   },
   data() {
     return {
-      subLink: {
-        title: 'Samværspolitik',
-        path: '/om-vu/samværspolitik/samværspolitik',
+      topLink: {
+        title: 'Oversigt',
+        path: '/om-vu/omvu',
       },
     }
   },

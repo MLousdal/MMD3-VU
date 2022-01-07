@@ -18,6 +18,9 @@
         <li v-for="link in links" :key="link.title">
           <nuxt-link :to="`${link.path}`">{{ link.title }}</nuxt-link>
         </li>
+        <li v-if="subLink">
+          <nuxt-link :to="`${subLink.path}`">{{ subLink.title }}</nuxt-link>
+        </li>
       </ul>
     </nav>
     <so-me-links class="subNavSomeLinks"></so-me-links>
@@ -30,6 +33,10 @@ export default {
   components: { SoMeLinks },
   props: {
     topLink: {
+      default() {},
+      type: Object,
+    },
+    subLink: {
       default() {},
       type: Object,
     },
