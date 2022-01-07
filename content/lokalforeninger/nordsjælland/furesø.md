@@ -1,6 +1,6 @@
 ---
-title: Faxe
-slug: faxe
+title: Furesø
+slug: furesø
 personer:
   - name: Lasse B. Sørensen
     number: 60442333

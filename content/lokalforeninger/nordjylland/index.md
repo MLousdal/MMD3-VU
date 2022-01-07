@@ -1,7 +1,6 @@
 ---
-title: Find din Lokalforening
+title: Nordjylland
 slug: index
-regioner: [fyn, hovedstaden, midt-vestjylland, nordjylland, nordsjælland, østjylland, sjælland, syd-sønderjylland]
 ---
 
 Det tager ingen tid at komme i kontakt med din lokale VU-afdeling.

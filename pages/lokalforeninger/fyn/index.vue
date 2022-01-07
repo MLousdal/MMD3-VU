@@ -5,12 +5,12 @@
       <nuxt-content :document="article" class="offset-bottom"></nuxt-content>
       <section class="card-grid">
         <nuxt-link
-          v-for="page in article.regioner"
-          :key="page"
-          :to="`/lokalforeninger/${page}`"
+          v-for="forening in lokalforeninger"
+          :key="forening"
+          :to="`${forening.path}`"
           class="grow s"
           ><sub-card
-            :content="page"
+            :content="forening.title"
             card-type="region"
             class="region"
           ></sub-card
@@ -24,7 +24,12 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const [article] = await $content('lokalforeninger').fetch()
+    const article = await $content('lokalforeninger/nordjylland/index').fetch()
+    const lokalforeninger = await $content('lokalforeninger/nordjylland', {
+      deep: true,
+    })
+      .only(['title', 'path'])
+      .fetch()
     const links = await $content('lokalforeninger', { deep: true })
       .only(['title', 'path'])
       .where({ slug: 'index' })
@@ -34,6 +39,7 @@ export default {
     return {
       article,
       links,
+      lokalforeninger,
     }
   },
 }

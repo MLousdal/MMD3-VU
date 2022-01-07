@@ -17,6 +17,7 @@
         {{ content.title }}
       </h4>
       <h4 v-if="cardType === 'contact'">{{ content.rolle }}</h4>
+      <h4 v-if="cardType === 'region'">{{ content }}</h4>
       <p v-if="cardType === 'contact'">
         {{ content.name }}<br />
         {{ content.number }}<br />

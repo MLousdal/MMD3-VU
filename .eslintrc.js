@@ -15,7 +15,7 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['default', 'videoer'],
+        ignores: ['default', 'videoer', 'index'],
       },
     ],
   },

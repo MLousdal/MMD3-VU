@@ -1,6 +1,6 @@
 ---
-title: Brønderslev
-slug: brønderslev
+title: Faxe
+slug: faxe
 personer:
   - name: Martin Dommerby
     number: 60442333
