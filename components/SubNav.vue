@@ -44,46 +44,63 @@ export default {
   },
   data() {
     return {
-      menuOpen: false,
+      menuOpen: true,
     }
   },
   mounted() {
-    document.addEventListener('mouseup', function (e) {
-      if (window.innerWidth < 970) {
-        const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
-        const container = document.querySelector('.subNavLinks')
-        if (!container.contains(e.target)) {
-          container.style.display = 'none'
-          subNavSomeLinks.style.display = 'none'
-        }
-      }
+    document.addEventListener('resize', this.mqResize())
+    document.addEventListener('mouseup', (e) => {
+      // bruger en arrow function for at overkomme problem med at this. skifter til
+      this.handleOutside(e)
     })
   },
   destroyed() {
-    document.removeEventListener('mouseup', function (e) {
-      if (window.innerWidth < 970) {
-        const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
-        const container = document.querySelector('.subNavLinks')
-        const navBtn = document.querySelector('.navBtn')
-        if (!container.contains(e.target || navBtn)) {
-          container.style.display = 'none'
-          subNavSomeLinks.style.display = 'none'
-        }
-      }
+    document.addEventListener('mouseup', (e) => {
+      // bruger en arrow function for at overkomme problem med at this. skifter til
+      this.handleOutside(e)
     })
   },
   methods: {
-    toggleMenu() {
+    mqResize() {
+      const mql = window.matchMedia('(max-width: 970px)')
       const navLinksContainer = document.querySelector('.subNavLinks')
-      const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
-      if (this.menuOpen === false) {
-        navLinksContainer.style.display = 'flex'
-        subNavSomeLinks.style.display = 'flex'
-        this.menuOpen = true
+      if (mql.matches) {
+        navLinksContainer.classList.add('hide')
       } else {
-        navLinksContainer.style.display = 'none'
-        subNavSomeLinks.style.display = 'none'
+        navLinksContainer.classList.remove('hide')
+      }
+    },
+    closeMenu() {
+      const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
+      const navLinksContainer = document.querySelector('.subNavLinks')
+      if (window.innerWidth < 970) {
+        subNavSomeLinks.classList.add('hide')
+        navLinksContainer.classList.add('hide')
+        this.menuOpen = true
+      }
+    },
+    openMenu() {
+      const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
+      const navLinksContainer = document.querySelector('.subNavLinks')
+      if (window.innerWidth < 970) {
+        subNavSomeLinks.classList.remove('hide')
+        navLinksContainer.classList.remove('hide')
         this.menuOpen = false
+      }
+    },
+    handleOutside(e) {
+      const navbar = document.querySelector('.subNav')
+      if (window.innerWidth < 970) {
+        if (!navbar.contains(e.target)) {
+          this.closeMenu()
+        }
+      }
+    },
+    toggleMenu() {
+      if (this.menuOpen === true) {
+        this.openMenu()
+      } else {
+        this.closeMenu()
       }
     },
   },
