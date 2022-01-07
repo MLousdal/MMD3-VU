@@ -12,7 +12,6 @@ export default {
     let vh = window.innerHeight * 0.01
     window.addEventListener('resize', () => {
       if (window.innerWidth > 970) {
-        console.log('desktop: ' + window.innerWidth)
         vh = window.innerHeight * 0.01
       }
       document.documentElement.style.setProperty('--vh', `${vh}px`)

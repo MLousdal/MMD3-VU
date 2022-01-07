@@ -25,9 +25,9 @@ th {
 
 @media (max-width: 650px) {
   tr {
-    display: flex;
-    flex-direction: column;
 
+
+    th:last-child,
     td:last-child {
       text-align: left;
     }
