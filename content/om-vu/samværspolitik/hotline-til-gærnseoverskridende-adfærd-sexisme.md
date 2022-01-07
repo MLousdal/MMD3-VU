@@ -4,14 +4,15 @@ slug: hotline-til-gærnseoverskridende-adfærd-sexisme
 ---
 
 ## 25 55 20 95 / HOTLINE@AMCENTRET.DK
-Har du oplevet grænseoverskridende adfærd, sexisme eller haft former for lignende ubehagelige oplevelser i organisationen? – Så vil Venstres Ungdom gerne hjælpe dig med din sag.
 
+Har du oplevet grænseoverskridende adfærd, sexisme eller haft former for lignende ubehagelige oplevelser i organisationen? – Så vil Venstres Ungdom gerne hjælpe dig med din sag.
 
 ## ET TYPISK FORLØB
 
-Et medlem ringer til vores hotline for grænseoverskridende adfærd, eller der sendes mail til Hotline@amcentret.dk. <!--!> Det her en mail og der skal derfor et link til.
+Et medlem ringer til vores hotline for grænseoverskridende adfærd, eller der sendes mail til Hotline@amcentret.dk.
 Medlemmet lægger besked på tlf. med navn, tlf. og evt. om der ønskes samtale med Tina Mulvad eller Jesper Bardrum. 
 Der vendes tilbage indenfor 4 timer og psykolog og medlemmet vurderer, om en telefonisk samtale er dækkende, eller om der er behov for et egentlig samtaleforløb. Første samtale kan tilbydes indenfor 72 timer. 
+
 Psykolog og medlem aftaler hvor, hvornår og hvordan samtalen skal foregå.
 Hvis psykolog og medlem vurderer, at der er behov for et egentligt forløb, godkendes dette af Venstres partisekretær.
 Samtaleforløbet påbegyndes. Forløbet tager udgangspunkt i de seksuelle krænkelser, og består af psykologisk støtte til håndtering og bedring. 
