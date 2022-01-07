@@ -20,8 +20,23 @@
     text-align: center;
     z-index: 1;
 
-    .xlarge-text {
-      max-width: 90%;
+    .arrows {
+      display: flex;
+      flex-direction: row;
+      gap: $unit-1;
+      align-items: center;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: $unit-2;
+      align-items: center;
+    }
+
+    img {
+      width: $unit-4;
+      height: $unit-4;
     }
   }
 }

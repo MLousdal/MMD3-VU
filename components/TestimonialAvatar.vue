@@ -1,19 +1,26 @@
 <template>
   <section>
     <img
-      src="~/assets/images/testimonial-avatar-1.png"
+      :src="`/images/personer/${content.image}`"
       alt=""
       class="round o"
     />
     <div class="flex column gap-05">
-      <p class="">Josephine Andersen</p>
+      <p class="">{{ content.name }}</p>
       <p class="">Medlem af Venstres Ungdom</p>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    content: {
+      default() {},
+      type: Object
+    }
+  }
+}
 </script>
 
 <style></style>

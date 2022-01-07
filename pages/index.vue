@@ -4,7 +4,7 @@
     <home-video></home-video>
     <home-social></home-social>
     <home-map></home-map>
-    <home-testimonials></home-testimonials>
+    <home-testimonials :testimonials="testimonials"></home-testimonials>
     <home-follow></home-follow>
     <home-tilmeld></home-tilmeld>
   </div>
@@ -26,6 +26,12 @@ export default {
     HomeSocial,
     HomeTestimonials,
     HomeFollow,
+  },
+  async asyncData({ $content }) {
+    const testimonials = await $content('testimonials').fetch()
+    return {
+      testimonials,
+    }
   },
 }
 </script>
