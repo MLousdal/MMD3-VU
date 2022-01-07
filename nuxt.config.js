@@ -53,7 +53,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
 
@@ -67,16 +66,10 @@ export default {
     // Options
   },
 
-  sitemap: {
-    hostname: 'https://exampel.com',
-    gzip: true,
-    routes: [],
-  },
-
   robots: {
     UserAgent: '*',
     Disallow: '',
-    Sitemap: 'https://exampel.com/sitemap.xml',
+    Sitemap: 'https://mmd-3-vu.vercel.app/sitemap.xml',
     CrawlDelay: 10,
   },
 }
