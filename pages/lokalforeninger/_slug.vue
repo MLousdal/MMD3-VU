@@ -10,7 +10,7 @@
           :to="`/lokalforeninger/${page}`"
           class="grow s"
           ><sub-card
-            :content="page"
+            :region="page"
             card-type="region"
             class="region"
           ></sub-card

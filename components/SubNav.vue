@@ -16,7 +16,8 @@
           <nuxt-link :to="`${topLink.path}`">{{ topLink.title }}</nuxt-link>
         </li>
         <li v-for="link in links" :key="link.title">
-          <nuxt-link :to="`${link.path}`">{{ link.title }}</nuxt-link>
+          <nuxt-link v-if="dir" :to="`${link.dir}`">{{ link.title }}</nuxt-link>
+          <nuxt-link v-else :to="`${link.path}`">{{ link.title }}</nuxt-link>
         </li>
         <li v-if="subLink">
           <nuxt-link :to="`${subLink.path}`">{{ subLink.title }}</nuxt-link>
@@ -47,6 +48,10 @@ export default {
     title: {
       default: '',
       type: String,
+    },
+    dir: {
+      default: false,
+      type: Boolean,
     },
   },
   data() {

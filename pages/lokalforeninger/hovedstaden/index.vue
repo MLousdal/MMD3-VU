@@ -6,32 +6,33 @@
       <section class="card-grid">
         <nuxt-link
           v-for="forening in lokalforeninger"
-          :key="forening"
+          :key="forening.title"
           :to="`${forening.path}`"
           class="grow s"
           ><sub-card
-            :content="forening.title"
+            :region="forening.title"
             card-type="region"
             class="region"
           ></sub-card
         ></nuxt-link>
       </section>
     </main>
-    <sub-nav title="Find Lokalforeninger" :links="links"></sub-nav>
+    <sub-nav title="Find Lokalforeninger" :links="links" dir></sub-nav>
   </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('lokalforeninger/nordjylland/index').fetch()
-    const lokalforeninger = await $content('lokalforeninger/nordjylland', {
+    const article = await $content('lokalforeninger/hovedstaden/index').fetch()
+    const lokalforeninger = await $content('lokalforeninger/hovedstaden', {
       deep: true,
     })
+      .where({ slug: { $ne: 'index' } })
       .only(['title', 'path'])
       .fetch()
     const links = await $content('lokalforeninger', { deep: true })
-      .only(['title', 'path'])
+      .only(['title', 'dir'])
       .where({ slug: 'index' })
       .sortBy('title', 'asc')
       .fetch()

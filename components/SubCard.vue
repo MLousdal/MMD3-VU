@@ -17,7 +17,7 @@
         {{ content.title }}
       </h4>
       <h4 v-if="cardType === 'contact'">{{ content.rolle }}</h4>
-      <h4 v-if="cardType === 'region'">{{ content }}</h4>
+      <h4 v-if="cardType === 'region'">{{ region }}</h4>
       <p v-if="cardType === 'contact'">
         {{ content.name }}<br />
         {{ content.number }}<br />
@@ -35,6 +35,10 @@
 export default {
   props: {
     cardType: {
+      default: 'default',
+      type: String,
+    },
+    region: {
       default: 'default',
       type: String,
     },

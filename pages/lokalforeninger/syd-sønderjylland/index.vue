@@ -24,8 +24,8 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('lokalforeninger/fyn/index').fetch()
-    const lokalforeninger = await $content('lokalforeninger/fyn', {
+    const article = await $content('lokalforeninger/syd-sønderjylland/index').fetch()
+    const lokalforeninger = await $content('lokalforeninger/syd-sønderjylland', {
       deep: true,
     })
       .where({ slug: { $ne: 'index' } })

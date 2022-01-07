@@ -14,8 +14,8 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('lokalforeninger/fyn', params.slug).fetch()
-    const lokalforeninger = await $content('lokalforeninger/fyn', {
+    const article = await $content('lokalforeninger/syd-sønderjylland', params.slug).fetch()
+    const lokalforeninger = await $content('lokalforeninger/syd-sønderjylland', {
       deep: true,
     })
       .where({ slug: { $ne: 'index' } })
@@ -29,8 +29,8 @@ export default {
   data() {
     return {
       topLink: {
-        title: 'Fyn',
-        path: '/lokalforeninger/fyn',
+        title: 'Syd-sønderjylland',
+        path: '/lokalforeninger/syd-sønderjylland',
       },
     }
   },
