@@ -24,7 +24,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('lokalforeninger/midt-vestjylland/index').fetch()
+    const article = await $content(
+      'lokalforeninger/midt-vestjylland/index'
+    ).fetch()
     const lokalforeninger = await $content('lokalforeninger/midt-vestjylland', {
       deep: true,
     })
@@ -41,6 +43,11 @@ export default {
       article,
       links,
       lokalforeninger,
+    }
+  },
+  head() {
+    return {
+      title: this.article.title + '- Venstres Ungdom',
     }
   },
 }

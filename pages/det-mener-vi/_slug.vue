@@ -51,6 +51,11 @@ export default {
       },
     }
   },
+  head() {
+    return {
+      title: this.article.title + '- Venstres Ungdom',
+    }
+  },
 }
 </script>
 

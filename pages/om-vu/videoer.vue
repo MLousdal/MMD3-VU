@@ -29,6 +29,11 @@ export default {
       links,
     }
   },
+  head() {
+    return {
+      title: this.article.title + '- Venstres Ungdom',
+    }
+  },
 }
 </script>
 
