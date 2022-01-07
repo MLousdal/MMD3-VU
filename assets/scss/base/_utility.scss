@@ -45,7 +45,7 @@
     &::after {
         content: "";
         background-color: var(--color-primary-transparent);
-        height: 100%;
+        height: inherit;
         left: 0;
         position: absolute;
         top: 0;

@@ -1,7 +1,12 @@
 <template>
   <nav class="box top">
     <div class="navContainer">
-      <nuxt-link to="/" class="logo" aria-label="home">
+      <nuxt-link
+        to="/"
+        class="logo"
+        aria-label="home"
+        @click.native="closeMenu"
+      >
         <div class="logo-bg">
           <img src="~/assets/icons/vu-logo.svg" alt="" />
         </div>

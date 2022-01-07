@@ -9,7 +9,7 @@
           mere om politik og samfundet samtidig med, at du møder andre unge med
           samme interesse som dig.
         </p>
-        <nuxt-link to="/om-vu" class="btn primary grow l"
+        <nuxt-link to="/om-vu/omvu" class="btn primary grow l"
           >Læs mere om VU</nuxt-link
         >
       </article>
