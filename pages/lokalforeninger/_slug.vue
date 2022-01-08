@@ -17,7 +17,7 @@
         ></nuxt-link>
       </section>
     </main>
-    <sub-nav title="Find Lokalforeninger" :links="links"></sub-nav>
+    <sub-nav title="Find Lokalforeninger" :links="links" dir></sub-nav>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
   async asyncData({ $content, params }) {
     const [article] = await $content('lokalforeninger').fetch()
     const links = await $content('lokalforeninger', { deep: true })
-      .only(['title', 'path'])
+      .only(['title', 'dir'])
       .where({ slug: 'index' })
       .sortBy('title', 'asc')
       .fetch()
