@@ -67,13 +67,12 @@
         </ul>
       </div>
     </div>
-    <input
-      type="image"
-      src="/icons/mdi_menu.svg"
-      alt="menu"
-      class="icon filter-primary navBtn"
-      @click="toggleMenu"
-    />
+    <input id="navbar_checkbox" type="checkbox" />
+    <label for="navbar_checkbox" class="navBtn" @click="toggleMenu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
   </nav>
 </template>
 
@@ -86,21 +85,15 @@ export default {
     }
   },
   mounted() {
-    document.addEventListener('scroll', this.scrolledEffect)
-    mqResize()
+    document.addEventListener('scroll', this.scrolledEffect, { passive: true })
+    document.addEventListener('resize', this.mqResize)
     document.addEventListener('mouseup', (e) => {
       // bruger en arrow function for at overkomme problem med at this. skifter til
       this.handleOutside(e)
     })
-    function mqResize() {
-      const mql = window.matchMedia('(max-width: 970px)')
-      if (mql.matches) {
-        const navLinksContainer = document.querySelector('.navLinksContainer')
-        navLinksContainer.classList.add('hide')
-      }
-    }
+    this.mqResize()
   },
-  destroyed() {
+  beforeDestroy() {
     document.removeEventListener('scroll', this.scrolledEffect)
     document.removeEventListener('mouseup', (e) => {
       this.handleOutside(e)
@@ -109,9 +102,11 @@ export default {
   methods: {
     closeMenu() {
       const navLinksContainer = document.querySelector('.navLinksContainer')
+      const navbarCheckbox = document.querySelector('#navbar_checkbox')
       if (window.innerWidth < 970) {
         navLinksContainer.classList.add('hide')
         this.menuOpen = true
+        navbarCheckbox.checked = false
       }
     },
     openMenu() {
@@ -134,6 +129,15 @@ export default {
         this.openMenu()
       } else {
         this.closeMenu()
+      }
+    },
+    mqResize() {
+      const mql = window.matchMedia('(max-width: 970px)')
+      const navLinksContainer = document.querySelector('.navLinksContainer')
+      if (mql.matches) {
+        navLinksContainer.classList.add('hide')
+      } else {
+        navLinksContainer.classList.remove('hide')
       }
     },
     scrolledEffect() {

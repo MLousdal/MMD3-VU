@@ -209,7 +209,7 @@ export default {
   mounted() {
     setInterval(this.increaseX, 10000)
   },
-  destroyed() {
+  beforeDestroy() {
     clearInterval(this.increaseX)
   },
   methods: {
