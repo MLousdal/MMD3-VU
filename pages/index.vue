@@ -89,7 +89,17 @@
               :document="testimonials[x]"
               class="xlarge-text"
             ></nuxt-content>
-            <testimonial-avatar :content="testimonials[x]"></testimonial-avatar>
+            <div>
+              <img
+                :src="`/images/personer/${testimonials[x].image}`"
+                alt=""
+                class="round o"
+              />
+              <div class="flex column gap-05">
+                <p class="">{{ testimonials[x].name }}</p>
+                <p class="">Medlem af Venstres Ungdom</p>
+              </div>
+            </div>
           </article>
           <input
             type="image"
