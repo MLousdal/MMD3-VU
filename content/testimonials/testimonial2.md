@@ -4,4 +4,4 @@ name: Emil Nørrevang
 image: emil.jpg
 ---
 
-Indsæt super demotiverende salgstale fra Josephine om, hvorfor hun har valgt at være en del af Venstres Ungdom, og hvad hun har fået ud af det hele.
+Jeg valgte egentlig at blive en del af VU pga en kammerat. Jeg deltager i flere aktiviteter og jeg har tænkt mig at blive grundet den organisatoriske erfaring, som Venstres Ungdom og menneskerne bag kan give mig.

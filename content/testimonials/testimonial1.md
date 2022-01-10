@@ -4,4 +4,4 @@ name: Amanda Sofie Duus
 image: amanda.jpg
 ---
 
-Indsæt super motiverende salgstale fra Josephine om, hvorfor hun har valgt at være en del af Venstres Ungdom, og hvad hun har fået ud af det hele.
+Jeg valgte at være en del af VU, fordi jeg gerne ville blive klogere på politik og samfundet. Jeg er ikke den mest aktive, men jeg bliver pga de mange arrangementer og det sociale aspekt ved at have ligesindede omkring mig.
