@@ -1,11 +1,20 @@
 <template>
-  <nuxt-link to="/lokalforeninger" class="map" aria-label="lokalforeninger">
-    <nuxt-picture src="/images/map.png" alt=""></nuxt-picture>
-  </nuxt-link>
+  <svg-map :map="Denmark" />
 </template>
 
 <script>
-export default {}
-</script>
+import { SvgMap } from 'vue-svg-map'
+import Denmark from '@svg-maps/denmark'
 
-<style></style>
+export default {
+  name: 'MyMap',
+  components: {
+    SvgMap,
+  },
+  data() {
+    return {
+      Denmark,
+    }
+  },
+}
+</script>
