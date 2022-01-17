@@ -3,26 +3,16 @@
     <main class="">
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article" class="offset-bottom"></nuxt-content>
-      <section class="card-grid">
-        <nuxt-link
-          v-for="page in article.regioner"
-          :key="page"
-          :to="`/lokalforeninger/${page}`"
-          class="grow s"
-          ><sub-card
-            :region="page"
-            card-type="region"
-            class="region"
-          ></sub-card
-        ></nuxt-link>
-      </section>
+      <v-map class="lokal"></v-map>
     </main>
     <sub-nav title="Find Lokalforeninger" :links="links" dir></sub-nav>
   </div>
 </template>
 
 <script>
+import VMap from '~/components/VMap.vue'
 export default {
+  components: { VMap },
   async asyncData({ $content, params }) {
     const [article] = await $content('lokalforeninger').fetch()
     const links = await $content('lokalforeninger', { deep: true })

@@ -1,10 +1,10 @@
 <template>
-  <svg-map :map="Denmark" />
+  <svg-map :map="Danmark" />
 </template>
 
 <script>
 import { SvgMap } from 'vue-svg-map'
-import Denmark from '@svg-maps/denmark'
+import Danmark from '~/assets/danmark'
 
 export default {
   name: 'MyMap',
@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      Denmark,
+      Danmark,
     }
   },
 }

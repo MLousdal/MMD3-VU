@@ -1,0 +1,52 @@
+{
+  "_from": "@svg-maps/denmark",
+  "_id": "@svg-maps/denmark@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-54jerRlpeirLUU7aDUHZT7D+AZcMthfRHOOjHRLgW38tqcCOM+41SurZAjwV1RA7lG2dAgeB6HnD0BClCKjsWQ==",
+  "_location": "/@svg-maps/denmark",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@svg-maps/denmark",
+    "name": "@svg-maps/denmark",
+    "escapedName": "@svg-maps%2fdenmark",
+    "scope": "@svg-maps",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@svg-maps/denmark/-/denmark-1.0.0.tgz",
+  "_shasum": "e475e94813dfcd5c67c1f6a3a6d9d4298704eb8b",
+  "_spec": "@svg-maps/denmark",
+  "_where": "C:\\Users\\Malle-PC\\Documents\\GitHub\\MMD3-VU",
+  "author": {
+    "name": "Mihai Ro",
+    "email": "mihai.roshca@gmail.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Map of Denmark",
+  "gitHead": "d3ca972c75b98c9f960daefd4a69c4778a19c446",
+  "keywords": [
+    "svg",
+    "map",
+    "denmark",
+    "regions"
+  ],
+  "license": "CC-BY-4.0",
+  "main": "index.js",
+  "name": "@svg-maps/denmark",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VictorCazanave/svg-maps/tree/master/packages/denmark"
+  },
+  "version": "1.0.0"
+}
