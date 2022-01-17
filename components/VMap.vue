@@ -33,7 +33,6 @@ export default {
     clickLocation(event) {
       this.clickedLocation = getLocationName(event.target)
       this.$router.push(URL[event.target.id])
-      // window.open(URL[event.target.id], '_blank')
     },
   },
 }
