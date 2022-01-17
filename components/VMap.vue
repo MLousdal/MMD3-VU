@@ -15,7 +15,7 @@ const URL = {
   fyn: '/lokalforeninger/fyn',
   hovedstaden: '/lokalforeninger/hovedstaden',
   nordsjælland: '/lokalforeninger/nordsjælland',
-  bornholm: '/lokalforeninger/hovedstaden',
+  bornholm: '/lokalforeninger/hovedstaden/bornholm',
   sjælland: '/lokalforeninger/sjælland',
 }
 
