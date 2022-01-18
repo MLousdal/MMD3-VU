@@ -4,7 +4,6 @@
 
 <script>
 import { SvgMap } from 'vue-svg-map'
-import { getLocationName } from '../utilities'
 import Danmark from '~/assets/danmark'
 
 const URL = {
@@ -31,7 +30,6 @@ export default {
   },
   methods: {
     clickLocation(event) {
-      this.clickedLocation = getLocationName(event.target)
       this.$router.push(URL[event.target.id])
     },
   },
