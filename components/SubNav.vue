@@ -3,14 +3,14 @@
     <nav class="box">
       <header>
         <h3>{{ title }}</h3>
-        <input id="subnav_checkbox" type="checkbox" />
+        <input id="subnav_checkbox" v-model="menuOpen" type="checkbox" />
         <label for="subnav_checkbox" class="navBtn" @click="toggleMenu">
           <div></div>
           <div></div>
           <div></div>
         </label>
       </header>
-      <ul class="subNavLinks">
+      <ul v-if="menuOpen" class="subNavLinks">
         <li v-if="topLink">
           <nuxt-link :to="`${topLink.path}`">{{ topLink.title }}</nuxt-link>
         </li>
@@ -23,7 +23,7 @@
         </li>
       </ul>
     </nav>
-    <so-me-links class="subNavSomeLinks"></so-me-links>
+    <so-me-links v-if="menuOpen" class="subNavSomeLinks"></so-me-links>
   </div>
 </template>
 
@@ -57,14 +57,14 @@ export default {
     }
   },
   mounted() {
-    document.addEventListener('resize', this.mqResize())
+    window.addEventListener('resize', this.mqResize())
     document.addEventListener('mouseup', (e) => {
       // bruger en arrow function for at overkomme problem med at this. skifter til
       this.subHandleOutside(e)
     })
   },
-  beforeDestroy() {
-    document.removeEventListener('resize', this.mqResize())
+  unmounted() {
+    window.removeEventListener('resize', this.mqResize())
     document.removeEventListener('mouseup', (e) => {
       // bruger en arrow function for at overkomme problem med at this. skifter til
       this.subHandleOutside(e)
@@ -73,34 +73,20 @@ export default {
   methods: {
     mqResize() {
       const mql = window.matchMedia('(max-width: 970px)')
-      const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
-      const navLinksContainer = document.querySelector('.subNavLinks')
       if (mql.matches) {
-        subNavSomeLinks.classList.add('hide')
-        navLinksContainer.classList.add('hide')
+        this.menuOpen = false
       } else {
-        subNavSomeLinks.classList.remove('hide')
-        navLinksContainer.classList.remove('hide')
+        this.menuOpen = true
       }
     },
     closeMenu() {
-      const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
-      const navLinksContainer = document.querySelector('.subNavLinks')
-      const subnavCheckbox = document.querySelector('#subnav_checkbox')
       if (window.innerWidth < 970) {
-        subNavSomeLinks.classList.add('hide')
-        navLinksContainer.classList.add('hide')
-        this.menuOpen = true
-        subnavCheckbox.checked = false
+        this.menuOpen = false
       }
     },
     openMenu() {
-      const subNavSomeLinks = document.querySelector('.subNavSomeLinks')
-      const navLinksContainer = document.querySelector('.subNavLinks')
       if (window.innerWidth < 970) {
-        subNavSomeLinks.classList.remove('hide')
-        navLinksContainer.classList.remove('hide')
-        this.menuOpen = false
+        this.menuOpen = true
       }
     },
     subHandleOutside(e) {

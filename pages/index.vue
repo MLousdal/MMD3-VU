@@ -64,13 +64,7 @@
             >
           </div>
         </article>
-        <nuxt-link
-          to="/lokalforeninger"
-          class="map"
-          aria-label="lokalforeninger"
-        >
-          <nuxt-picture src="/images/map.png" alt=""></nuxt-picture>
-        </nuxt-link>
+        <v-map></v-map>
       </div>
     </section>
     <section class="home-testimonials overlay">
@@ -192,7 +186,9 @@
 </template>
 
 <script>
+import VMap from '~/components/VMap.vue'
 export default {
+  components: { VMap },
   name: 'IndexPage',
   async asyncData({ $content }) {
     const testimonials = await $content('testimonials').fetch()

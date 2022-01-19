@@ -12,7 +12,7 @@
         </div>
         <span class="bold xlarge-text capitalize">Venstres Ungdom</span>
       </nuxt-link>
-      <div class="navLinksContainer">
+      <div v-if="menuOpen" class="navLinksContainer">
         <ul class="navLinks">
           <li>
             <nuxt-link
@@ -67,7 +67,7 @@
         </ul>
       </div>
     </div>
-    <input id="navbar_checkbox" type="checkbox" />
+    <input id="navbar_checkbox" v-model="menuOpen" type="checkbox" />
     <label for="navbar_checkbox" class="navBtn" @click="toggleMenu">
       <div></div>
       <div></div>
@@ -86,14 +86,14 @@ export default {
   },
   mounted() {
     document.addEventListener('scroll', this.scrolledEffect, { passive: true })
-    document.addEventListener('resize', this.mqResize)
+    window.addEventListener('resize', this.mqResize);
     document.addEventListener('mouseup', (e) => {
       // bruger en arrow function for at overkomme problem med at this. skifter til
       this.handleOutside(e)
     })
     this.mqResize()
   },
-  beforeDestroy() {
+  unmounted() {
     document.removeEventListener('scroll', this.scrolledEffect)
     document.removeEventListener('mouseup', (e) => {
       this.handleOutside(e)
@@ -101,19 +101,13 @@ export default {
   },
   methods: {
     closeMenu() {
-      const navLinksContainer = document.querySelector('.navLinksContainer')
-      const navbarCheckbox = document.querySelector('#navbar_checkbox')
       if (window.innerWidth < 970) {
-        navLinksContainer.classList.add('hide')
-        this.menuOpen = true
-        navbarCheckbox.checked = false
+        this.menuOpen = false
       }
     },
     openMenu() {
-      const navLinksContainer = document.querySelector('.navLinksContainer')
       if (window.innerWidth < 970) {
-        navLinksContainer.classList.remove('hide')
-        this.menuOpen = false
+        this.menuOpen = true
       }
     },
     handleOutside(e) {
@@ -133,11 +127,10 @@ export default {
     },
     mqResize() {
       const mql = window.matchMedia('(max-width: 970px)')
-      const navLinksContainer = document.querySelector('.navLinksContainer')
       if (mql.matches) {
-        navLinksContainer.classList.add('hide')
+        this.menuOpen = false
       } else {
-        navLinksContainer.classList.remove('hide')
+        this.menuOpen = true
       }
     },
     scrolledEffect() {
